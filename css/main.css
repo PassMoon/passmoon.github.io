@@ -1114,7 +1114,7 @@ pre .javascript .function {
   padding: 0 40px;
   background: #222;
   border-bottom: none;
-  color: #ffb6c1 !important;
+  color: #2570a1 !important;
 }
 .brand:hover {
   color: #222;
@@ -1208,7 +1208,7 @@ pre .javascript .function {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-  color: #ffb6c1 !important;
+  color: #2570a1 !important;
 }
 .menu .menu-item a:hover {
   border-bottom-color: #222;
@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff67ff;
+  background: #1f110a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2677,7 +2677,7 @@ hr {
   position: relative;
   display: block;
   height: 2px;
-  background: #ffb6c1 !important;
+  background: #2570a1 !important;
 }
 @media (max-width: 767px) {
   .logo-line-before i,
