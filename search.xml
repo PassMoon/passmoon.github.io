@@ -17,8 +17,12 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/05/23/QT%205.9%20C++%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[]]></content>
+    <title>Qt</title>
+    <url>/2022/04/19/QT%205.9%20C++%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>explicit 不能显示转换</p>
+]]></content>
+      <categories>
+        <category>QT</category>
+      </categories>
   </entry>
 </search>
