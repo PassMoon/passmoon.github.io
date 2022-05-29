@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d2ffcd;
+  background: #cd85af;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2906,7 +2906,7 @@ hr {
   }
 }
 body {
-  background-image: url("/images/background.jpeg");
+  background-image: url("/IDR_THEME_NTP_BACKGROUND.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
