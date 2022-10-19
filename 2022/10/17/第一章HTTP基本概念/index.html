@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="为中华崛起而读书">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://example.com/about/index.html">
+<meta name="description" content="HTTP基本概念HTTP： Hyper Text Transfer Protocol ,超文本传输协议 消息模型 ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。 1.HTTP基本概念所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。 HTTP请示头：  GET: 主要作用是从Web服务器获取一个资源。GET请">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MACHINE">
+<meta property="og:url" content="http://example.com/2022/10/17/%E7%AC%AC%E4%B8%80%E7%AB%A0HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/index.html">
 <meta property="og:site_name" content="MACHINE">
-<meta property="og:description" content="为中华崛起而读书">
+<meta property="og:description" content="HTTP基本概念HTTP： Hyper Text Transfer Protocol ,超文本传输协议 消息模型 ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。 1.HTTP基本概念所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。 HTTP请示头：  GET: 主要作用是从Web服务器获取一个资源。GET请">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-04-19T15:45:47.000Z">
-<meta property="article:modified_time" content="2022-04-19T15:48:41.438Z">
+<meta property="article:published_time" content="2022-10-17T15:55:16.535Z">
+<meta property="article:modified_time" content="2022-10-19T01:00:44.885Z">
 <meta property="article:author" content="PassMoon">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/about/"/>
+  <link rel="canonical" href="http://example.com/2022/10/17/第一章HTTP基本概念/"/>
 
 
 
 
 
-  <title>about | MACHINE</title>
+  <title> | MACHINE</title>
   
 
 
@@ -284,33 +284,237 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/17/%E7%AC%AC%E4%B8%80%E7%AB%A0HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/proface.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MACHINE">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-10-17T23:55:16+08:00">
+                2022-10-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="HTTP基本概念"><a href="#HTTP基本概念" class="headerlink" title="HTTP基本概念"></a>HTTP基本概念</h1><p><strong>HTTP：</strong> Hyper Text Transfer Protocol ,超文本传输协议</p>
+<p><strong>消息模型</strong> ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。</p>
+<h2 id="1-HTTP基本概念"><a href="#1-HTTP基本概念" class="headerlink" title="1.HTTP基本概念"></a>1.HTTP基本概念</h2><p>所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。</p>
+<p><strong>HTTP请示头</strong>：</p>
+<ul>
+<li><p><strong>GET:</strong> 主要作用是从Web服务器获取一个资源。GET请求并没有消息主题，因此在消息头后的空白行中没有其他数据。它所请求的URL通常由所请求的资源名称，以及一个包含客户端向该资源提交的参数的可选查询字符串组成。HTTP版本为1.1必须使用Host请求。</p>
+</li>
+<li><p><strong>HOST消息头：</strong> 用于指定出现在被访问的完整URL中的主机名称。如果几个Web站点以相同的一台服务器为主机，就需要使用Host消息头，因为请求第一行中的URL内通常并不包含主机名称。</p>
+</li>
+<li><p><strong>Accept</strong> ：Accept表示浏览器支持的MIME(Multipurpose Internet Mail Extensions , 多用途互联网邮件扩展)类型；浏览器支持的类型：</p>
+<blockquote>
+<p>text: 用于标准化表示的文本信息</p>
+<p>text/html:表示html文档</p>
+<p>application:用于传输应用程序数据或二进制数据</p>
+<p>application/xhtml+xml:表示xhtml文档</p>
+<p>application/xml:表示xml文档</p>
+</blockquote>
+<p>优先顺序是从左到右的排列顺序。</p>
+</li>
+<li><p><strong>Referer消息头：</strong> 用于表示发出请求的原始URL</p>
+</li>
+<li><p><strong>Accept-Language：</strong> 浏览器支持的语言</p>
+</li>
+<li><p>q是权重系数，范围0&lt;=q&lt;=1。q值越大，请求越倾向于“；”之前的类型表示的内容。若没有指定q，默认为1；若为0，用于提醒服务器哪些是浏览器不接受的内容类型</p>
+</li>
+<li><p><strong>User-Agent消息头：</strong> 提供与浏览器或其他生成请求的客户端软件有关的信息。</p>
+</li>
+<li><p><strong>Accept-Encoding:</strong> 浏览器支持的压缩编码是gzip和deflate</p>
+</li>
+<li><p><strong>Cookie消息头：</strong> 用于提交服务器向客户端发布的其他参数</p>
+</li>
+<li><p><strong>Connection：</strong> 表示持久的客户端与服务连接。</p>
+</li>
+</ul>
+<h2 id="2-HTTP响应"><a href="#2-HTTP响应" class="headerlink" title="2.HTTP响应"></a>2.HTTP响应</h2><p>​    服务器响应返回的代码：</p>
+<ul>
+<li>HTTP/1.1 表示HTTP版本</li>
+<li>200表示请求结果的数字状态码</li>
+<li><strong>Server</strong>： 消息头中包含一个旗标，指明所使用的Web服务器软件。</li>
+<li><strong>Set-Cookie</strong>: 消息头向浏览器发送另一个Cookie，它将在随后向服务器发送的请求中由Cookie消息头返回。</li>
+<li><strong>Pragma：</strong>消息头指示浏览器不要将响应存在缓存中。</li>
+<li><strong>Expires：</strong>消息头指出响应内容已经过期，因此不应保存在缓存中。当返回动态内容时常常会发送这些指令，以确保浏览器随时获得最新内容。</li>
+</ul>
+<p>除了GET和POST方法以外，HTTP协议还支持许多其他因特殊目的建立的方法，具体如下：</p>
+<ul>
+<li><strong>HEAD</strong>:方法的功能与GET方法相似，不同之处在于服务器不会在其响应中返回消息主体。这种方法可用于检查某一资源在向其提交GET请求钱是否存在。</li>
+<li><strong>TRACE</strong>：主要用于诊断。用于检测客户端与服务器之间是否存在任何操纵请求的代理服务器。</li>
+<li><strong>OPTIONS</strong>：这种方法要求服务器报告对某一特殊资源有效的HTTP方法。</li>
+<li><strong>PUT</strong>：这个方法试图使用包含在请求主体的内容，向服务器上传指定的资源。</li>
+</ul>
+<h3 id="2-1-HTTP消息头"><a href="#2-1-HTTP消息头" class="headerlink" title="2.1 HTTP消息头"></a>2.1 HTTP消息头</h3><ol>
+<li>请求消息头<ul>
+<li>Host: 用来告知服务器，请求的资源所处的互联网主机名和端口号</li>
+<li>User-Agent： 提供与浏览器或生成请求的其他客户端软件有关的信息</li>
+<li>Accept： 告知服务器，客户端愿意接受哪些内容</li>
+<li>Accept-Language</li>
+<li>Accept-Encoding</li>
+<li>Content-Type：表示具体请求中的媒体类型信息，确切的是客户端告知服务端，自己即将发送的请求消息携带的数据结构类型，好让服务端接收后以合适的方式处理。</li>
+<li>Origin： 这个消息头用在跨域Ajax请求中，用于指示提出请求的域。</li>
+<li>Referer： 这个消息头用于指示提出当前请求的原始URL</li>
+<li>Cookie： 用于向服务器提交它以前发布的Cookie</li>
+</ul>
+</li>
+<li>响应消息头<ul>
+<li>Content-Type: 返回内容的MIME类型</li>
+<li>Date：原始服务器消息发出的时间</li>
+<li>Server： 提供所使用的Web服务器软件的相关信息</li>
+<li>Set-Cookie：用于向浏览器发布Cookie，浏览器在随后的请求中将其返回给服务器。</li>
+<li>Transfer-Encoding</li>
+<li>Vary：告诉下游代理是使用缓存响应还是从原始服务器请求。</li>
+<li>X-Frame-Options：指示浏览器框架是什么以及如何加载当前响应。</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-2-Cookie"><a href="#2-2-Cookie" class="headerlink" title="2.2 Cookie"></a>2.2 Cookie</h3><p>​        服务器使用Cookie机制向客户端发送数据，客户端保存Cookie并将其返回服务器。与其他类型的请求参数（存在于URL查询字符串或消息主体中）不同，无需应用程序或用户采取任何措施。随后的每一个请求都会继续重新向服务器提交Cookie。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Set-Cookie: tarcking=tI8rk7joMx44S2Uu85nSWc</span><br><span class="line"></span><br><span class="line">Cookie:tracking=tI8rk7joMx44S2Uu85nSWc</span><br></pre></td></tr></table></figure>
+
+<p>​        如上所示，Cookie一般由一个名/值对构成，但也可包含任何不含空格的字符串。可以在服务器响应中使用几个Set-Cookie消息头发布多个Cookie，并可在同一个Cookie消息头中用分号分隔不同的Cookie，将他们全部返回给服务器。</p>
+<p>​        除Cookie的实际位外，Set-Cookie消息头可以包含一下任何可选属性</p>
+<blockquote>
+<p>Expires: 用于设定Cookie的有效时间</p>
+<p>Domain：用于指定Cookie的有效域</p>
+<p>Path：用于指定Cookie的有效URL</p>
+<p>Secure： 如果设置这个属性，则仅在HTTPS请求中提交Cookie</p>
+<p>HTTPOnly：如果设置这个属性，将无法通过客户端JavaScript直接访问Cookie</p>
+</blockquote>
+<h2 id="3-状态码"><a href="#3-状态码" class="headerlink" title="3.状态码"></a>3.状态码</h2><p>状态码可以分为五类：</p>
+<blockquote>
+<ol>
+<li>1xx–提供信息。</li>
+<li>2xx–请求被成功提交。</li>
+<li>3xx–客户端被重定向其他资源。</li>
+<li>4xx–客户端错误。</li>
+<li>5xx–服务器执行请求时遇到错误</li>
+</ol>
+</blockquote>
+<h2 id="4-URL编码"><a href="#4-URL编码" class="headerlink" title="4.URL编码"></a>4.URL编码</h2><p>​        URL只允许使用US-ASCII字符集中的可打印字符（也就是ASCII代码在0x20-0x27范围内的字符），而且，由于其在URL方案或HTTP协议内具有特殊含义，这个范围内的一些字符也不能用在URL中。</p>
+<p>​        URL编码方案主要用于对扩展ASCII字符集中的任何有问题的字符进行编码，使其可通过HTTP安全传输。任何URL编码的字符都以“%”为前缀，其后是这个字符的两位十六进制ASCII代码。以下是常见的URL编码字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">%3d 代表= ； </span><br><span class="line">%25 代表% ； </span><br><span class="line">%20 代表空格； </span><br><span class="line">%0a 代表新行； </span><br><span class="line">%00 代表空字节</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/05/29/%E4%B9%B1%E7%A0%81/" rel="next" title="中文乱码">
+                <i class="fa fa-chevron-left"></i> 中文乱码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -343,8 +547,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -408,6 +621,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">HTTP基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">1.HTTP基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-HTTP%E5%93%8D%E5%BA%94"><span class="nav-number">1.2.</span> <span class="nav-text">2.HTTP响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-HTTP%E6%B6%88%E6%81%AF%E5%A4%B4"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 HTTP消息头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Cookie"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 Cookie</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%8A%B6%E6%80%81%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">3.状态码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-URL%E7%BC%96%E7%A0%81"><span class="nav-number">1.4.</span> <span class="nav-text">4.URL编码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
