@@ -16,23 +16,22 @@
   <meta name="author" content="PassMoon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Kali 初始化配置1. 更换源 查找kali源 阿里镜像站  更换kali源 1sudo vim &#x2F;etc&#x2F;apt&#x2F;sources.list 更新升级kali内容 1sudo apt update  参考：Kali更换源   2. 安装中文输入法（ibus） 打开终端，安装ibus输入法 1apt-get install ibus ibus-pinyin 输入 im-config 若出错，提示安">
+    <meta name="description" content="搭建CTF环境时所用到的命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kali初始配置">
-<meta property="og:url" content="http://example.com/2022/11/08/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="Docker简单命令">
+<meta property="og:url" content="http://example.com/2022/11/08/tools/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="MACHINE">
-<meta property="og:description" content="Kali 初始化配置1. 更换源 查找kali源 阿里镜像站  更换kali源 1sudo vim &#x2F;etc&#x2F;apt&#x2F;sources.list 更新升级kali内容 1sudo apt update  参考：Kali更换源   2. 安装中文输入法（ibus） 打开终端，安装ibus输入法 1apt-get install ibus ibus-pinyin 输入 im-config 若出错，提示安">
+<meta property="og:description" content="搭建CTF环境时所用到的命令">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-08T14:42:18.000Z">
-<meta property="article:modified_time" content="2022-11-08T14:58:13.083Z">
+<meta property="article:published_time" content="2022-11-08T14:26:11.000Z">
+<meta property="article:modified_time" content="2022-11-09T07:15:13.877Z">
 <meta property="article:author" content="PassMoon">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="Kali">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Kali初始配置 - MACHINE</title>
+  <title>Docker简单命令 - MACHINE</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Kali初始配置"></span>
+            <span id="subtitle" data-typed-text="Docker简单命令"></span>
           
         </div>
 
@@ -208,7 +207,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-08 22:42" pubdate>
+        <time datetime="2022-11-08 22:26" pubdate>
           2022年11月8日 晚上
         </time>
       </span>
@@ -253,59 +252,32 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Kali初始配置</h1>
+            <h1 style="display: none">Docker简单命令</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Kali-初始化配置"><a href="#Kali-初始化配置" class="headerlink" title="Kali 初始化配置"></a>Kali 初始化配置</h1><h2 id="1-更换源"><a href="#1-更换源" class="headerlink" title="1. 更换源"></a>1. 更换源</h2><ol>
-<li><p>查找kali源</p>
-<p><a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/">阿里镜像站</a></p>
-</li>
-<li><p>更换kali源</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo vim /etc/apt/sources.list<br></code></pre></td></tr></table></figure></li>
-<li><p>更新升级kali内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
+                <h2 id="1-查看容器"><a href="#1-查看容器" class="headerlink" title="1. 查看容器"></a>1. 查看容器</h2><p>列出已经创建的所有容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker ps -a    <br></code></pre></td></tr></table></figure>
 
-<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53030229/article/details/123125352">Kali更换源</a></p>
-</li>
-</ol>
-<h2 id="2-安装中文输入法（ibus）"><a href="#2-安装中文输入法（ibus）" class="headerlink" title="2. 安装中文输入法（ibus）"></a>2. 安装中文输入法（ibus）</h2><ol>
-<li><p>打开终端，安装ibus输入法</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install ibus ibus-pinyin<br></code></pre></td></tr></table></figure></li>
-<li><p>输入 im-config</p>
-<p>若出错，提示安装zenity</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install zenity<br></code></pre></td></tr></table></figure></li>
-<li><p>再次输入im-config</p>
-<p>依次点击 “确定”-“是”</p>
-<p>选中<strong>“ibus”</strong>，然后点击确定</p>
-<p>确定后，又会弹出一个框，确定</p>
-</li>
-<li><p>输入 ibus-setup</p>
-<p>“添加-中文-pinyin-添加”即可</p>
-</li>
-<li><p>最后一步，重启即可 (reboot)</p>
-</li>
-</ol>
-<p>参考：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/114211319">kali怎么安装中文输入法</a></p>
-<h2 id="3-安装git"><a href="#3-安装git" class="headerlink" title="3. 安装git"></a>3. 安装git</h2><ol>
-<li><p>安装git</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install git<br></code></pre></td></tr></table></figure></li>
-<li><p>添加git服务用户</p>
-<p>邮箱：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.email <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure>
+<p>列出正在运行的容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker ps -s <br></code></pre></td></tr></table></figure>
 
-<p>用户：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;Double-Blank&quot;</span> <br></code></pre></td></tr></table></figure>
+<h2 id="2-启动容器"><a href="#2-启动容器" class="headerlink" title="2. 启动容器"></a>2. 启动容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker start [container ID]<br></code></pre></td></tr></table></figure>
 
-<p>使用命令查看是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global --list<br></code></pre></td></tr></table></figure></li>
-<li><p>生成ssh公钥</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li><p>在代码托管平台上添加SSH公匙</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mousepad /home/advance/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42815873/article/details/121977771">在kali linux上安装git与push提交</a></p>
+<h2 id="3-进入已经运行的容器"><a href="#3-进入已经运行的容器" class="headerlink" title="3. 进入已经运行的容器"></a>3. 进入已经运行的容器</h2><p>方法一（推荐）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker attach [container ID]<br></code></pre></td></tr></table></figure>
+
+<p>方法二（未使用）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it [container ID] /bin/bash<br></code></pre></td></tr></table></figure>
+
+<h2 id="4-退出容器"><a href="#4-退出容器" class="headerlink" title="4. 退出容器"></a>4. 退出容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="5-停用容器"><a href="#5-停用容器" class="headerlink" title="5. 停用容器"></a>5. 停用容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker stop [container ID]<br></code></pre></td></tr></table></figure>
+
+
+
+<p>参考:<a target="_blank" rel="noopener" href="https://blog.csdn.net/jghiof/article/details/117687974?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1">Docker简单容器命令</a></p>
 
                 
               </div>
@@ -324,7 +296,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
+  <a href="/categories/Docker/" class="category-chain-item">Docker</a>
   
   
 
@@ -339,9 +311,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/linux/">#linux</a>
-      
-        <a href="/tags/Kali/">#Kali</a>
+        <a href="/tags/Docker/">#Docker</a>
       
     </div>
   
@@ -353,8 +323,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Kali初始配置</div>
-      <div>http://example.com/2022/11/08/Kali初始配置/</div>
+      <div>Docker简单命令</div>
+      <div>http://example.com/2022/11/08/tools/Docker简单命令/</div>
     </div>
     <div class="license-meta">
       
@@ -398,12 +368,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2022/11/08/Linux/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/" title="Kali初始配置">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Kali初始配置</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/08/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" title="Docker简单命令">
-                        <span class="hidden-mobile">Docker简单命令</span>
+                      <a href="/2022/11/08/Linux/linux-intasll-Docker/" title="linux intasll Docker">
+                        <span class="hidden-mobile">linux intasll Docker</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

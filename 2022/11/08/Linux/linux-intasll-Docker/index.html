@@ -16,22 +16,23 @@
   <meta name="author" content="PassMoon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="基本概念比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值 字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位 字符（Character）：是一个信息单位，是各种文字和符号的统称 字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数 字符码（Code Point）：字符集中每个字符的数字编号 字符编码（Characte">
+    <meta name="description" content="记录ubuntu和kali的docker安装步骤">
 <meta property="og:type" content="article">
-<meta property="og:title" content="中文乱码">
-<meta property="og:url" content="http://example.com/2022/05/29/%E4%B9%B1%E7%A0%81/index.html">
+<meta property="og:title" content="linux intasll Docker">
+<meta property="og:url" content="http://example.com/2022/11/08/Linux/linux-intasll-Docker/index.html">
 <meta property="og:site_name" content="MACHINE">
-<meta property="og:description" content="基本概念比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值 字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位 字符（Character）：是一个信息单位，是各种文字和符号的统称 字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数 字符码（Code Point）：字符集中每个字符的数字编号 字符编码（Characte">
+<meta property="og:description" content="记录ubuntu和kali的docker安装步骤">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-29T08:03:32.785Z">
-<meta property="article:modified_time" content="2022-05-29T08:28:12.857Z">
+<meta property="article:published_time" content="2022-11-08T14:14:32.000Z">
+<meta property="article:modified_time" content="2022-11-09T07:10:55.066Z">
 <meta property="article:author" content="PassMoon">
-<meta property="article:tag" content="Garbled code">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>中文乱码 - MACHINE</title>
+  <title>linux intasll Docker - MACHINE</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="中文乱码"></span>
+            <span id="subtitle" data-typed-text="linux intasll Docker"></span>
           
         </div>
 
@@ -207,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-05-29 16:03" pubdate>
-          2022年5月29日 下午
+        <time datetime="2022-11-08 22:14" pubdate>
+          2022年11月8日 晚上
         </time>
       </span>
     
@@ -252,28 +253,51 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">中文乱码</h1>
+            <h1 style="display: none">linux intasll Docker</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
-字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
-字符（Character）：是一个信息单位，是各种文字和符号的统称
-字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
-字符码（Code Point）：字符集中每个字符的数字编号
-字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
-编码（Encoding）：编码的过程是将字符转换成字节流
-解码 （Decoding）：解码的过程是将字节流解析为字符
-</code></pre>
-<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
-<ul>
-<li>首先把字符转换成数字</li>
-<li>直接存储数字</li>
-</ul>
-<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
-<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
-<p><em>注：utf-8采用可变字节存储方式</em></p>
+                <h1 id="Linux-安装-Docker"><a href="#Linux-安装-Docker" class="headerlink" title="Linux 安装 Docker"></a>Linux 安装 Docker</h1><h2 id="1-Ubuntu"><a href="#1-Ubuntu" class="headerlink" title="1. Ubuntu"></a>1. Ubuntu</h2><ol>
+<li><p>卸载旧版</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get remove docker docker-engine docker.io containerd runc<br></code></pre></td></tr></table></figure></li>
+<li><p>终端输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt update<br>apt-get install ca-certificates curl gnupg lsb-release<br></code></pre></td></tr></table></figure></li>
+<li><p>安装证书</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
+<li><p>写入软件源信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo add-apt-repository <span class="hljs-string">&quot;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu <span class="hljs-subst">$(lsb_release -cs)</span> stable&quot;</span><br></code></pre></td></tr></table></figure></li>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt-get install docker-ce docker-ce-cli containerd.io<br></code></pre></td></tr></table></figure></li>
+<li><p>启动Docker</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">systemctl start docker<br></code></pre></td></tr></table></figure></li>
+<li><p>安装工具</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get -y install apt-transport-https ca-certificates curl software-properties-common<br></code></pre></td></tr></table></figure></li>
+<li><p>重启docker</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">service docker restart<br></code></pre></td></tr></table></figure></li>
+<li><p>查看docker版本 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker version<br></code></pre></td></tr></table></figure></li>
+<li><p>查看镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker images<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012563853/article/details/125295985">Ubuntu安装docker</a></p>
+<h2 id="2-Kali-linux"><a href="#2-Kali-linux" class="headerlink" title="2. Kali linux"></a>2. Kali linux</h2><ol>
+<li><p>添加Docker官方的GPG密钥</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">curl  -fsSL https:<span class="hljs-regexp">//</span>download.docker.com<span class="hljs-regexp">/linux/</span>debian/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
+<li><p>更新源</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;deb https://download.docker.com/linux/debian stretch stable&#x27;</span>&gt; /etc/apt/sources.list.d/docker.list<br></code></pre></td></tr></table></figure></li>
+<li><p>直接导入证书</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install apt-transport-https  ca-certificates  curl  gnupg2  software-properties-common<br></code></pre></td></tr></table></figure></li>
+<li><p>系统更新</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get update<br></code></pre></td></tr></table></figure></li>
+<li><p>安装docker</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install docker.io<br></code></pre></td></tr></table></figure></li>
+<li><p>检查docker安装是否成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker -v<br></code></pre></td></tr></table></figure></li>
+<li><p>docker安装成功后，需要安装compose</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt install docker-compose<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/aodechudawei/article/details/122450720">kali安装docker</a></p>
 
                 
               </div>
@@ -292,15 +316,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/common-problem/" class="category-chain-item">common problem</a>
+  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/common-problem/Garbled-code/" class="category-chain-item">Garbled code</a>
-  
-  
-
   
 
       </span>
@@ -314,7 +331,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Garbled-code/">#Garbled code</a>
+        <a href="/tags/linux/">#linux</a>
+      
+        <a href="/tags/Docker/">#Docker</a>
       
     </div>
   
@@ -326,8 +345,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>中文乱码</div>
-      <div>http://example.com/2022/05/29/乱码/</div>
+      <div>linux intasll Docker</div>
+      <div>http://example.com/2022/11/08/Linux/linux-intasll-Docker/</div>
     </div>
     <div class="license-meta">
       
@@ -339,7 +358,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年5月29日</div>
+          <div>2022年11月8日</div>
         </div>
       
       
@@ -371,9 +390,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/17/HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="HTTP基本概念">
+                      <a href="/2022/11/08/tools/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" title="Docker简单命令">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">HTTP基本概念</span>
+                        <span class="hidden-mobile">Docker简单命令</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -381,8 +400,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/05/29/Python%E6%B3%A8%E9%87%8A/" title="Python注释">
-                        <span class="hidden-mobile">Python注释</span>
+                      <a href="/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/" title="hexo搭建网站">
+                        <span class="hidden-mobile">hexo搭建网站</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

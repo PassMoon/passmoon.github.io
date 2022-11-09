@@ -16,22 +16,25 @@
   <meta name="author" content="PassMoon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="HTTP基本概念HTTP： Hyper Text Transfer Protocol ,超文本传输协议 消息模型 ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。 1.HTTP基本概念所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。 HTTP请示头：  GET: 主要作用是从Web服务器获取一个资源。GET请">
+    <meta name="description" content="搭建自己的Blog，用于记录学习和生活">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTTP基本概念">
-<meta property="og:url" content="http://example.com/2022/10/17/HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/index.html">
+<meta property="og:title" content="hexo搭建网站">
+<meta property="og:url" content="http://example.com/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/index.html">
 <meta property="og:site_name" content="MACHINE">
-<meta property="og:description" content="HTTP基本概念HTTP： Hyper Text Transfer Protocol ,超文本传输协议 消息模型 ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。 1.HTTP基本概念所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。 HTTP请示头：  GET: 主要作用是从Web服务器获取一个资源。GET请">
+<meta property="og:description" content="搭建自己的Blog，用于记录学习和生活">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-10-17T15:55:16.535Z">
-<meta property="article:modified_time" content="2022-10-19T13:48:13.476Z">
+<meta property="og:image" content="http://example.com/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/fig1.png">
+<meta property="article:published_time" content="2022-10-19T15:19:39.801Z">
+<meta property="article:modified_time" content="2022-11-09T07:14:35.578Z">
 <meta property="article:author" content="PassMoon">
-<meta property="article:tag" content="http">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="Questions">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/fig1.png">
   
   
   
-  <title>HTTP基本概念 - MACHINE</title>
+  <title>hexo搭建网站 - MACHINE</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="HTTP基本概念"></span>
+            <span id="subtitle" data-typed-text="hexo搭建网站"></span>
           
         </div>
 
@@ -207,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-17 23:55" pubdate>
-          2022年10月17日 晚上
+        <time datetime="2022-10-19 23:19" pubdate>
+          2022年10月19日 晚上
         </time>
       </span>
     
@@ -252,111 +255,72 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">HTTP基本概念</h1>
+            <h1 style="display: none">hexo搭建网站</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="HTTP基本概念"><a href="#HTTP基本概念" class="headerlink" title="HTTP基本概念"></a>HTTP基本概念</h1><p><strong>HTTP：</strong> Hyper Text Transfer Protocol ,超文本传输协议</p>
-<p><strong>消息模型</strong> ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。</p>
-<h2 id="1-HTTP基本概念"><a href="#1-HTTP基本概念" class="headerlink" title="1.HTTP基本概念"></a>1.HTTP基本概念</h2><p>所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。</p>
-<p><strong>HTTP请示头</strong>：</p>
-<ul>
-<li><p><strong>GET:</strong> 主要作用是从Web服务器获取一个资源。GET请求并没有消息主题，因此在消息头后的空白行中没有其他数据。它所请求的URL通常由所请求的资源名称，以及一个包含客户端向该资源提交的参数的可选查询字符串组成。HTTP版本为1.1必须使用Host请求。</p>
+                <p>本网站只做搭建blog及遇到的问题记录</p>
+<h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><ol>
+<li><p><strong>安装git</strong></p>
 </li>
-<li><p><strong>HOST消息头：</strong> 用于指定出现在被访问的完整URL中的主机名称。如果几个Web站点以相同的一台服务器为主机，就需要使用Host消息头，因为请求第一行中的URL内通常并不包含主机名称。</p>
-</li>
-<li><p><strong>Accept</strong> ：Accept表示浏览器支持的MIME(Multipurpose Internet Mail Extensions , 多用途互联网邮件扩展)类型；浏览器支持的类型：</p>
+<li><p><strong>安装node</strong>（注意：下面操作都在git中进行）</p>
+<p>检测node安装是否成功：</p>
 <blockquote>
-<p>text: 用于标准化表示的文本信息</p>
-<p>text/html:表示html文档</p>
-<p>application:用于传输应用程序数据或二进制数据</p>
-<p>application/xhtml+xml:表示xhtml文档</p>
-<p>application/xml:表示xml文档</p>
+<p><code>node -v</code>（返回node版本号）</p>
+<p><code>npm -v</code>（返回npm版本号）</p>
 </blockquote>
-<p>优先顺序是从左到右的排列顺序。</p>
 </li>
-<li><p><strong>Referer消息头：</strong> 用于表示发出请求的原始URL</p>
-</li>
-<li><p><strong>Accept-Language：</strong> 浏览器支持的语言</p>
-</li>
-<li><p>q是权重系数，范围0&lt;=q&lt;=1。q值越大，请求越倾向于“；”之前的类型表示的内容。若没有指定q，默认为1；若为0，用于提醒服务器哪些是浏览器不接受的内容类型</p>
-</li>
-<li><p><strong>User-Agent消息头：</strong> 提供与浏览器或其他生成请求的客户端软件有关的信息。</p>
-</li>
-<li><p><strong>Accept-Encoding:</strong> 浏览器支持的压缩编码是gzip和deflate</p>
-</li>
-<li><p><strong>Cookie消息头：</strong> 用于提交服务器向客户端发布的其他参数</p>
-</li>
-<li><p><strong>Connection：</strong> 表示持久的客户端与服务连接。</p>
-</li>
-</ul>
-<h2 id="2-HTTP响应"><a href="#2-HTTP响应" class="headerlink" title="2.HTTP响应"></a>2.HTTP响应</h2><p>​    服务器响应返回的代码：</p>
-<ul>
-<li>HTTP/1.1 表示HTTP版本</li>
-<li>200表示请求结果的数字状态码</li>
-<li><strong>Server</strong>： 消息头中包含一个旗标，指明所使用的Web服务器软件。</li>
-<li><strong>Set-Cookie</strong>: 消息头向浏览器发送另一个Cookie，它将在随后向服务器发送的请求中由Cookie消息头返回。</li>
-<li><strong>Pragma：</strong>消息头指示浏览器不要将响应存在缓存中。</li>
-<li><strong>Expires：</strong>消息头指出响应内容已经过期，因此不应保存在缓存中。当返回动态内容时常常会发送这些指令，以确保浏览器随时获得最新内容。</li>
-</ul>
-<p>除了GET和POST方法以外，HTTP协议还支持许多其他因特殊目的建立的方法，具体如下：</p>
-<ul>
-<li><strong>HEAD</strong>:方法的功能与GET方法相似，不同之处在于服务器不会在其响应中返回消息主体。这种方法可用于检查某一资源在向其提交GET请求钱是否存在。</li>
-<li><strong>TRACE</strong>：主要用于诊断。用于检测客户端与服务器之间是否存在任何操纵请求的代理服务器。</li>
-<li><strong>OPTIONS</strong>：这种方法要求服务器报告对某一特殊资源有效的HTTP方法。</li>
-<li><strong>PUT</strong>：这个方法试图使用包含在请求主体的内容，向服务器上传指定的资源。</li>
-</ul>
-<h3 id="2-1-HTTP消息头"><a href="#2-1-HTTP消息头" class="headerlink" title="2.1 HTTP消息头"></a>2.1 HTTP消息头</h3><ol>
-<li>请求消息头<ul>
-<li>Host: 用来告知服务器，请求的资源所处的互联网主机名和端口号</li>
-<li>User-Agent： 提供与浏览器或生成请求的其他客户端软件有关的信息</li>
-<li>Accept： 告知服务器，客户端愿意接受哪些内容</li>
-<li>Accept-Language</li>
-<li>Accept-Encoding</li>
-<li>Content-Type：表示具体请求中的媒体类型信息，确切的是客户端告知服务端，自己即将发送的请求消息携带的数据结构类型，好让服务端接收后以合适的方式处理。</li>
-<li>Origin： 这个消息头用在跨域Ajax请求中，用于指示提出请求的域。</li>
-<li>Referer： 这个消息头用于指示提出当前请求的原始URL</li>
-<li>Cookie： 用于向服务器提交它以前发布的Cookie</li>
-</ul>
-</li>
-<li>响应消息头<ul>
-<li>Content-Type: 返回内容的MIME类型</li>
-<li>Date：原始服务器消息发出的时间</li>
-<li>Server： 提供所使用的Web服务器软件的相关信息</li>
-<li>Set-Cookie：用于向浏览器发布Cookie，浏览器在随后的请求中将其返回给服务器。</li>
-<li>Transfer-Encoding</li>
-<li>Vary：告诉下游代理是使用缓存响应还是从原始服务器请求。</li>
-<li>X-Frame-Options：指示浏览器框架是什么以及如何加载当前响应。</li>
-</ul>
+<li><p><strong>安装hexo</strong></p>
+<blockquote>
+<p>安装完nodejs后通过以下命令安装hexo</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g <br></code></pre></td></tr></table></figure>
+
+<p>hexo安装完成后查看版本号</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo -v</span><br></code></pre></td></tr></table></figure></blockquote>
 </li>
 </ol>
-<h3 id="2-2-Cookie"><a href="#2-2-Cookie" class="headerlink" title="2.2 Cookie"></a>2.2 Cookie</h3><p>​        服务器使用Cookie机制向客户端发送数据，客户端保存Cookie并将其返回服务器。与其他类型的请求参数（存在于URL查询字符串或消息主体中）不同，无需应用程序或用户采取任何措施。随后的每一个请求都会继续重新向服务器提交Cookie。</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs routeros">Set-Cookie: <span class="hljs-attribute">tarcking</span>=tI8rk7joMx44S2Uu85nSWc<br><br>Cookie:<span class="hljs-attribute">tracking</span>=tI8rk7joMx44S2Uu85nSWc<br></code></pre></td></tr></table></figure>
-
-<p>​        如上所示，Cookie一般由一个名/值对构成，但也可包含任何不含空格的字符串。可以在服务器响应中使用几个Set-Cookie消息头发布多个Cookie，并可在同一个Cookie消息头中用分号分隔不同的Cookie，将他们全部返回给服务器。</p>
-<p>​        除Cookie的实际位外，Set-Cookie消息头可以包含一下任何可选属性</p>
-<blockquote>
-<p>Expires: 用于设定Cookie的有效时间</p>
-<p>Domain：用于指定Cookie的有效域</p>
-<p>Path：用于指定Cookie的有效URL</p>
-<p>Secure： 如果设置这个属性，则仅在HTTPS请求中提交Cookie</p>
-<p>HTTPOnly：如果设置这个属性，将无法通过客户端JavaScript直接访问Cookie</p>
-</blockquote>
-<h2 id="3-状态码"><a href="#3-状态码" class="headerlink" title="3.状态码"></a>3.状态码</h2><p>状态码可以分为五类：</p>
-<blockquote>
-<ol>
-<li>1xx–提供信息。</li>
-<li>2xx–请求被成功提交。</li>
-<li>3xx–客户端被重定向其他资源。</li>
-<li>4xx–客户端错误。</li>
-<li>5xx–服务器执行请求时遇到错误</li>
+<h1 id="初始化操作过程"><a href="#初始化操作过程" class="headerlink" title="初始化操作过程"></a>初始化操作过程</h1><ol>
+<li>在本地建立blog文件夹（注意：以下操作要在blog根目录下执行）</li>
+<li><code>hexo init</code>（初始化hexo）</li>
+<li><code>hexo s</code>（启动hexo,然后就能在本地<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://localhost:4000">http://localhost:4000</a>查看自己的网站了）</li>
 </ol>
-</blockquote>
-<h2 id="4-URL编码"><a href="#4-URL编码" class="headerlink" title="4.URL编码"></a>4.URL编码</h2><p>​        URL只允许使用US-ASCII字符集中的可打印字符（也就是ASCII代码在0x20-0x27范围内的字符），而且，由于其在URL方案或HTTP协议内具有特殊含义，这个范围内的一些字符也不能用在URL中。</p>
-<p>​        URL编码方案主要用于对扩展ASCII字符集中的任何有问题的字符进行编码，使其可通过HTTP安全传输。任何URL编码的字符都以“%”为前缀，其后是这个字符的两位十六进制ASCII代码。以下是常见的URL编码字符：</p>
-<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs haml"><span class="hljs-tag">%<span class="hljs-selector-tag">3d</span></span> 代表= ； <br><span class="hljs-tag">%<span class="hljs-selector-tag">25</span></span> 代表% ； <br><span class="hljs-tag">%<span class="hljs-selector-tag">20</span></span> 代表空格； <br><span class="hljs-tag">%<span class="hljs-selector-tag">0a</span></span> 代表新行； <br><span class="hljs-tag">%<span class="hljs-selector-tag">00</span></span> 代表空字节<br></code></pre></td></tr></table></figure>
+<h1 id="连接GitHub与本地"><a href="#连接GitHub与本地" class="headerlink" title="连接GitHub与本地"></a>连接GitHub与本地</h1><p>首先右键打开git bash，然后输入下面命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;githubname&quot;</span><br>git config --global user.email <span class="hljs-string">&quot;xxxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure>
 
+<p>用户名和邮箱根据注册的github的信息自行修改。</p>
+<p>然后生成密钥SSH key：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;xxxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>打开<a href="https://link.zhihu.com/?target=http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字随意，输入生成的ssh密钥。</p>
+<p>gitbash输入<code>ssh -T git@github.com</code>，如果如下图Fig1所示，出现你的用户名，那就成功了。</p>
+<img src="/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/fig1.png" srcset="/img/loading.gif" lazyload>
+
+<p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p>
+<p>修改最后一行的配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repository: https://github.com/xxxxxxx/xxxxxxx.github.io<br>  branch: master<br></code></pre></td></tr></table></figure>
+
+<p>repository修改为自己的github项目地址。</p>
+<h1 id="发布文章到GitHub"><a href="#发布文章到GitHub" class="headerlink" title="发布文章到GitHub"></a>发布文章到GitHub</h1><ol>
+<li><p><strong>写文章</strong></p>
+<p>首先在博客根目录下右键打开git bash，安装一个扩展<code>npm i hexo-deployer-git</code>。</p>
+<p>然后输入<code>hexo new post &quot;article title&quot;</code>，新建一篇文章。</p>
+<p>之后打开<code>..\blog\source\_posts</code>的目录，可以发现下面多了一个文件夹和一个<code>.md</code>文件，一个用来存放你的图片等数据，另一个是文章文件。</p>
+</li>
+<li><p><strong>发布</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g	<br>hexo s	//可以本地查看静态网站http://localhost:4000<br>hexo d<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Git问题"><a href="#Git问题" class="headerlink" title="Git问题"></a>Git问题</h1><ol>
+<li><p><strong>重置 windows 10后，因为更新了用户名，造成之前的所以 git 仓库，都无法直接拉取代码</strong></p>
+<p><strong>解决方案：</strong>选择git仓库文件夹-&gt;右键-&gt;属性-&gt;安全-&gt;高级-&gt;所有者更改-&gt;高级-&gt;立即查找-&gt;找到当前账户-&gt;确定-&gt;勾选替换子容器和对象所有者、使用可从对象继承的权限项目替换所有子对象的权限项目。</p>
+</li>
+<li><p><strong>运行git命令出现lf will be replaced by crlf 的解决方法</strong></p>
+<p><strong>解决方案：</strong>出现这样的现象的解决思路windows中的换行符为 CRLF， 而在Linux下的换行符为LF，所以在执行add ，具体操作在方法如下：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">$ rm -rf <span class="hljs-string">.git</span>  <span class="hljs-string">//</span> 删除<span class="hljs-string">.git</span> <br>$ git config <span class="hljs-params">--global</span> core.autocrlf <span class="hljs-literal">false</span>  <span class="hljs-string">//</span>禁用自动转换<br></code></pre></td></tr></table></figure>
+
+<p>然后重新执行：</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>git init  <br><span class="hljs-variable">$ </span>git add .<br></code></pre></td></tr></table></figure></li>
+</ol>
 
                 
               </div>
@@ -375,7 +339,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Web%E5%AE%89%E5%85%A8/" class="category-chain-item">Web安全</a>
+  <a href="/categories/BLOG/" class="category-chain-item">BLOG</a>
   
   
 
@@ -390,7 +354,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/http/">#http</a>
+        <a href="/tags/blog/">#blog</a>
+      
+        <a href="/tags/Questions/">#Questions</a>
       
     </div>
   
@@ -402,8 +368,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>HTTP基本概念</div>
-      <div>http://example.com/2022/10/17/HTTP基本概念/</div>
+      <div>hexo搭建网站</div>
+      <div>http://example.com/2022/10/19/others/hexo建站/</div>
     </div>
     <div class="license-meta">
       
@@ -415,7 +381,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年10月17日</div>
+          <div>2022年10月19日</div>
         </div>
       
       
@@ -447,9 +413,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/19/hexo%E5%BB%BA%E7%AB%99/" title="hexo搭建网站">
+                      <a href="/2022/11/08/Linux/linux-intasll-Docker/" title="linux intasll Docker">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">hexo搭建网站</span>
+                        <span class="hidden-mobile">linux intasll Docker</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -457,8 +423,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/05/29/%E4%B9%B1%E7%A0%81/" title="中文乱码">
-                        <span class="hidden-mobile">中文乱码</span>
+                      <a href="/2022/10/17/computer_science/HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="HTTP基本概念">
+                        <span class="hidden-mobile">HTTP基本概念</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

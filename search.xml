@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Python注释</title>
+    <url>/2022/05/29/algorithms%20and%20programming/Python%E6%B3%A8%E9%87%8A/</url>
+    <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
+<h2 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h2><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-string">&#x27;&#x27;&#x27;  注释信息 &#x27;&#x27;&#x27;</span><br><span class="hljs-string">&quot;&quot;&quot; 注释信息 &quot;&quot;&quot;</span><br>多行行首添加<span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="特殊注释"><a href="#特殊注释" class="headerlink" title="特殊注释"></a>特殊注释</h2><p><code>#!/usr/bin/python</code> 表明python解释器所在路径，一般在Linux下使用</p>
+<p><code># encoding=utf-8</code>（中文支持）<br><strong>注：Python3直接支持，Python2默认不支持</strong><br><strong># encoding=utf-8、# coding=utf-8</strong><br><strong>正规的Python推荐写法：# <em>*</em> coding:utf-8 <em>*</em></strong></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中文乱码</title>
+    <url>/2022/05/29/algorithms%20and%20programming/%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
+字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
+字符（Character）：是一个信息单位，是各种文字和符号的统称
+字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
+字符码（Code Point）：字符集中每个字符的数字编号
+字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
+编码（Encoding）：编码的过程是将字符转换成字节流
+解码 （Decoding）：解码的过程是将字节流解析为字符
+</code></pre>
+<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
+<ul>
+<li>首先把字符转换成数字</li>
+<li>直接存储数字</li>
+</ul>
+<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
+<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
+<p><em>注：utf-8采用可变字节存储方式</em></p>
+]]></content>
+      <categories>
+        <category>common problem</category>
+        <category>Garbled code</category>
+      </categories>
+      <tags>
+        <tag>Garbled code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTTP基本概念</title>
-    <url>/2022/10/17/HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <url>/2022/10/17/computer_science/HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<h1 id="HTTP基本概念"><a href="#HTTP基本概念" class="headerlink" title="HTTP基本概念"></a>HTTP基本概念</h1><p><strong>HTTP：</strong> Hyper Text Transfer Protocol ,超文本传输协议</p>
 <p><strong>消息模型</strong> ： 客户端发送一条请求消息，而后由服务器返回一条响应消息。</p>
 <h2 id="1-HTTP基本概念"><a href="#1-HTTP基本概念" class="headerlink" title="1.HTTP基本概念"></a>1.HTTP基本概念</h2><p>所有HTTP信息（请求与响应）中都包含一个或几个单行显示的消息头（header），然后是一个强制空白行，最后是消息主体（可选）。</p>
@@ -112,40 +157,81 @@
       </tags>
   </entry>
   <entry>
-    <title>Docker简单命令</title>
-    <url>/2022/11/08/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="1-查看容器"><a href="#1-查看容器" class="headerlink" title="1. 查看容器"></a>1. 查看容器</h2><p>列出已经创建的所有容器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -a    <br></code></pre></td></tr></table></figure>
+    <title>hexo搭建网站</title>
+    <url>/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<p>本网站只做搭建blog及遇到的问题记录</p>
+<h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><ol>
+<li><p><strong>安装git</strong></p>
+</li>
+<li><p><strong>安装node</strong>（注意：下面操作都在git中进行）</p>
+<p>检测node安装是否成功：</p>
+<blockquote>
+<p><code>node -v</code>（返回node版本号）</p>
+<p><code>npm -v</code>（返回npm版本号）</p>
+</blockquote>
+</li>
+<li><p><strong>安装hexo</strong></p>
+<blockquote>
+<p>安装完nodejs后通过以下命令安装hexo</p>
+<figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g <br></code></pre></td></tr></table></figure>
 
-<p>列出正在运行的容器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -s <br></code></pre></td></tr></table></figure>
+<p>hexo安装完成后查看版本号</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo -v</span><br></code></pre></td></tr></table></figure></blockquote>
+</li>
+</ol>
+<h1 id="初始化操作过程"><a href="#初始化操作过程" class="headerlink" title="初始化操作过程"></a>初始化操作过程</h1><ol>
+<li>在本地建立blog文件夹（注意：以下操作要在blog根目录下执行）</li>
+<li><code>hexo init</code>（初始化hexo）</li>
+<li><code>hexo s</code>（启动hexo,然后就能在本地<a href="https://links.jianshu.com/go?to=http://localhost:4000">http://localhost:4000</a>查看自己的网站了）</li>
+</ol>
+<h1 id="连接GitHub与本地"><a href="#连接GitHub与本地" class="headerlink" title="连接GitHub与本地"></a>连接GitHub与本地</h1><p>首先右键打开git bash，然后输入下面命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;githubname&quot;</span><br>git config --global user.email <span class="hljs-string">&quot;xxxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="2-启动容器"><a href="#2-启动容器" class="headerlink" title="2. 启动容器"></a>2. 启动容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker start [container ID]<br></code></pre></td></tr></table></figure>
+<p>用户名和邮箱根据注册的github的信息自行修改。</p>
+<p>然后生成密钥SSH key：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;xxxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="3-进入已经运行的容器"><a href="#3-进入已经运行的容器" class="headerlink" title="3. 进入已经运行的容器"></a>3. 进入已经运行的容器</h2><p>方法一（推荐）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker attach [container ID]<br></code></pre></td></tr></table></figure>
+<p>打开<a href="https://link.zhihu.com/?target=http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字随意，输入生成的ssh密钥。</p>
+<p>gitbash输入<code>ssh -T git@github.com</code>，如果如下图Fig1所示，出现你的用户名，那就成功了。</p>
+<img src="/2022/10/19/others/hexo%E5%BB%BA%E7%AB%99/fig1.png">
 
-<p>方法二（未使用）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it [container ID] /bin/bash<br></code></pre></td></tr></table></figure>
+<p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p>
+<p>修改最后一行的配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repository: https://github.com/xxxxxxx/xxxxxxx.github.io<br>  branch: master<br></code></pre></td></tr></table></figure>
 
-<h2 id="4-退出容器"><a href="#4-退出容器" class="headerlink" title="4. 退出容器"></a>4. 退出容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure>
+<p>repository修改为自己的github项目地址。</p>
+<h1 id="发布文章到GitHub"><a href="#发布文章到GitHub" class="headerlink" title="发布文章到GitHub"></a>发布文章到GitHub</h1><ol>
+<li><p><strong>写文章</strong></p>
+<p>首先在博客根目录下右键打开git bash，安装一个扩展<code>npm i hexo-deployer-git</code>。</p>
+<p>然后输入<code>hexo new post &quot;article title&quot;</code>，新建一篇文章。</p>
+<p>之后打开<code>..\blog\source\_posts</code>的目录，可以发现下面多了一个文件夹和一个<code>.md</code>文件，一个用来存放你的图片等数据，另一个是文章文件。</p>
+</li>
+<li><p><strong>发布</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g	<br>hexo s	//可以本地查看静态网站http://localhost:4000<br>hexo d<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Git问题"><a href="#Git问题" class="headerlink" title="Git问题"></a>Git问题</h1><ol>
+<li><p><strong>重置 windows 10后，因为更新了用户名，造成之前的所以 git 仓库，都无法直接拉取代码</strong></p>
+<p><strong>解决方案：</strong>选择git仓库文件夹-&gt;右键-&gt;属性-&gt;安全-&gt;高级-&gt;所有者更改-&gt;高级-&gt;立即查找-&gt;找到当前账户-&gt;确定-&gt;勾选替换子容器和对象所有者、使用可从对象继承的权限项目替换所有子对象的权限项目。</p>
+</li>
+<li><p><strong>运行git命令出现lf will be replaced by crlf 的解决方法</strong></p>
+<p><strong>解决方案：</strong>出现这样的现象的解决思路windows中的换行符为 CRLF， 而在Linux下的换行符为LF，所以在执行add ，具体操作在方法如下：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><code class="hljs jboss-cli">$ rm -rf <span class="hljs-string">.git</span>  <span class="hljs-string">//</span> 删除<span class="hljs-string">.git</span> <br>$ git config <span class="hljs-params">--global</span> core.autocrlf <span class="hljs-literal">false</span>  <span class="hljs-string">//</span>禁用自动转换<br></code></pre></td></tr></table></figure>
 
-<h2 id="5-停用容器"><a href="#5-停用容器" class="headerlink" title="5. 停用容器"></a>5. 停用容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker stop [container ID]<br></code></pre></td></tr></table></figure>
-
-
-
-<p>参考:<a href="https://blog.csdn.net/jghiof/article/details/117687974?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1">Docker简单容器命令</a></p>
+<p>然后重新执行：</p>
+<figure class="highlight crystal"><table><tr><td class="code"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>git init  <br><span class="hljs-variable">$ </span>git add .<br></code></pre></td></tr></table></figure></li>
+</ol>
 ]]></content>
       <categories>
-        <category>Docker</category>
+        <category>BLOG</category>
       </categories>
       <tags>
-        <tag>Docker</tag>
+        <tag>blog</tag>
+        <tag>Questions</tag>
       </tags>
   </entry>
   <entry>
     <title>Kali初始配置</title>
-    <url>/2022/11/08/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/</url>
+    <url>/2022/11/08/Linux/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="Kali-初始化配置"><a href="#Kali-初始化配置" class="headerlink" title="Kali 初始化配置"></a>Kali 初始化配置</h1><h2 id="1-更换源"><a href="#1-更换源" class="headerlink" title="1. 更换源"></a>1. 更换源</h2><ol>
 <li><p>查找kali源</p>
 <p><a href="https://developer.aliyun.com/mirror/">阿里镜像站</a></p>
@@ -204,135 +290,40 @@
       </tags>
   </entry>
   <entry>
-    <title>Python注释</title>
-    <url>/2022/05/29/Python%E6%B3%A8%E9%87%8A/</url>
-    <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
-<h2 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h2><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-string">&#x27;&#x27;&#x27;  注释信息 &#x27;&#x27;&#x27;</span><br><span class="hljs-string">&quot;&quot;&quot; 注释信息 &quot;&quot;&quot;</span><br>多行行首添加<span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
+    <title>Docker简单命令</title>
+    <url>/2022/11/08/tools/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="1-查看容器"><a href="#1-查看容器" class="headerlink" title="1. 查看容器"></a>1. 查看容器</h2><p>列出已经创建的所有容器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -a    <br></code></pre></td></tr></table></figure>
 
-<h2 id="特殊注释"><a href="#特殊注释" class="headerlink" title="特殊注释"></a>特殊注释</h2><p><code>#!/usr/bin/python</code> 表明python解释器所在路径，一般在Linux下使用</p>
-<p><code># encoding=utf-8</code>（中文支持）<br><strong>注：Python3直接支持，Python2默认不支持</strong><br><strong># encoding=utf-8、# coding=utf-8</strong><br><strong>正规的Python推荐写法：# <em>*</em> coding:utf-8 <em>*</em></strong></p>
+<p>列出正在运行的容器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -s <br></code></pre></td></tr></table></figure>
+
+<h2 id="2-启动容器"><a href="#2-启动容器" class="headerlink" title="2. 启动容器"></a>2. 启动容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker start [container ID]<br></code></pre></td></tr></table></figure>
+
+<h2 id="3-进入已经运行的容器"><a href="#3-进入已经运行的容器" class="headerlink" title="3. 进入已经运行的容器"></a>3. 进入已经运行的容器</h2><p>方法一（推荐）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker attach [container ID]<br></code></pre></td></tr></table></figure>
+
+<p>方法二（未使用）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it [container ID] /bin/bash<br></code></pre></td></tr></table></figure>
+
+<h2 id="4-退出容器"><a href="#4-退出容器" class="headerlink" title="4. 退出容器"></a>4. 退出容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="5-停用容器"><a href="#5-停用容器" class="headerlink" title="5. 停用容器"></a>5. 停用容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker stop [container ID]<br></code></pre></td></tr></table></figure>
+
+
+
+<p>参考:<a href="https://blog.csdn.net/jghiof/article/details/117687974?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1">Docker简单容器命令</a></p>
 ]]></content>
       <categories>
-        <category>Python</category>
+        <category>Docker</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Qt</title>
-    <url>/2022/04/19/QT%205.9%20C++%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>explicit 不能显示转换</p>
-]]></content>
-      <categories>
-        <category>QT</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hexo搭建网站</title>
-    <url>/2022/10/19/hexo%E5%BB%BA%E7%AB%99/</url>
-    <content><![CDATA[<p>本网站只做搭建blog及遇到的问题记录</p>
-<h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><ol>
-<li><p><strong>安装git</strong></p>
-</li>
-<li><p><strong>安装node</strong>（注意：下面操作都在git中进行）</p>
-<p>检测node安装是否成功：</p>
-<blockquote>
-<p><code>node -v</code>（返回node版本号）</p>
-<p><code>npm -v</code>（返回npm版本号）</p>
-</blockquote>
-</li>
-<li><p><strong>安装hexo</strong></p>
-<blockquote>
-<p>安装完nodejs后通过以下命令安装hexo</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g <br></code></pre></td></tr></table></figure>
-
-<p>hexo安装完成后查看版本号</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo -v</span><br></code></pre></td></tr></table></figure></blockquote>
-</li>
-</ol>
-<h1 id="初始化操作过程"><a href="#初始化操作过程" class="headerlink" title="初始化操作过程"></a>初始化操作过程</h1><ol>
-<li>在本地建立blog文件夹（注意：以下操作要在blog根目录下执行）</li>
-<li><code>hexo init</code>（初始化hexo）</li>
-<li><code>hexo s</code>（启动hexo,然后就能在本地<a href="https://links.jianshu.com/go?to=http://localhost:4000">http://localhost:4000</a>查看自己的网站了）</li>
-</ol>
-<h1 id="连接GitHub与本地"><a href="#连接GitHub与本地" class="headerlink" title="连接GitHub与本地"></a>连接GitHub与本地</h1><p>首先右键打开git bash，然后输入下面命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;githubname&quot;</span><br>git config --global user.email <span class="hljs-string">&quot;xxxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>用户名和邮箱根据注册的github的信息自行修改。</p>
-<p>然后生成密钥SSH key：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;xxxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>打开<a href="https://link.zhihu.com/?target=http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字随意，输入生成的ssh密钥。</p>
-<p>gitbash输入<code>ssh -T git@github.com</code>，如果如下图Fig1所示，出现你的用户名，那就成功了。</p>
-<img src="/2022/10/19/hexo%E5%BB%BA%E7%AB%99/fig1.png">
-
-<p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p>
-<p>修改最后一行的配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repository: https://github.com/xxxxxxx/xxxxxxx.github.io<br>  branch: master<br></code></pre></td></tr></table></figure>
-
-<p>repository修改为自己的github项目地址。</p>
-<h1 id="发布文章到GitHub"><a href="#发布文章到GitHub" class="headerlink" title="发布文章到GitHub"></a>发布文章到GitHub</h1><ol>
-<li><p><strong>写文章</strong></p>
-<p>首先在博客根目录下右键打开git bash，安装一个扩展<code>npm i hexo-deployer-git</code>。</p>
-<p>然后输入<code>hexo new post &quot;article title&quot;</code>，新建一篇文章。</p>
-<p>之后打开<code>..\blog\source\_posts</code>的目录，可以发现下面多了一个文件夹和一个<code>.md</code>文件，一个用来存放你的图片等数据，另一个是文章文件。</p>
-</li>
-<li><p><strong>发布</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g	<br>hexo s	//可以本地查看静态网站http://localhost:4000<br>hexo d<br></code></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="Git问题"><a href="#Git问题" class="headerlink" title="Git问题"></a>Git问题</h1><ol>
-<li><p><strong>重置 windows 10后，因为更新了用户名，造成之前的所以 git 仓库，都无法直接拉取代码</strong></p>
-<p><strong>解决方案：</strong>选择git仓库文件夹-&gt;右键-&gt;属性-&gt;安全-&gt;高级-&gt;所有者更改-&gt;高级-&gt;立即查找-&gt;找到当前账户-&gt;确定-&gt;勾选替换子容器和对象所有者、使用可从对象继承的权限项目替换所有子对象的权限项目。</p>
-</li>
-<li><p><strong>运行git命令出现lf will be replaced by crlf 的解决方法</strong></p>
-<p><strong>解决方案：</strong>出现这样的现象的解决思路windows中的换行符为 CRLF， 而在Linux下的换行符为LF，所以在执行add ，具体操作在方法如下：</p>
-<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><code class="hljs jboss-cli">$ rm -rf <span class="hljs-string">.git</span>  <span class="hljs-string">//</span> 删除<span class="hljs-string">.git</span> <br>$ git config <span class="hljs-params">--global</span> core.autocrlf <span class="hljs-literal">false</span>  <span class="hljs-string">//</span>禁用自动转换<br></code></pre></td></tr></table></figure>
-
-<p>然后重新执行：</p>
-<figure class="highlight crystal"><table><tr><td class="code"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>git init  <br><span class="hljs-variable">$ </span>git add .<br></code></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>BLOG</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>Questions</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>中文乱码</title>
-    <url>/2022/05/29/%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
-字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
-字符（Character）：是一个信息单位，是各种文字和符号的统称
-字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
-字符码（Code Point）：字符集中每个字符的数字编号
-字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
-编码（Encoding）：编码的过程是将字符转换成字节流
-解码 （Decoding）：解码的过程是将字节流解析为字符
-</code></pre>
-<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
-<ul>
-<li>首先把字符转换成数字</li>
-<li>直接存储数字</li>
-</ul>
-<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
-<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
-<p><em>注：utf-8采用可变字节存储方式</em></p>
-]]></content>
-      <categories>
-        <category>common problem</category>
-        <category>Garbled code</category>
-      </categories>
-      <tags>
-        <tag>Garbled code</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
     <title>linux intasll Docker</title>
-    <url>/2022/11/08/linux-intasll-Docker/</url>
+    <url>/2022/11/08/Linux/linux-intasll-Docker/</url>
     <content><![CDATA[<h1 id="Linux-安装-Docker"><a href="#Linux-安装-Docker" class="headerlink" title="Linux 安装 Docker"></a>Linux 安装 Docker</h1><h2 id="1-Ubuntu"><a href="#1-Ubuntu" class="headerlink" title="1. Ubuntu"></a>1. Ubuntu</h2><ol>
 <li><p>卸载旧版</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get remove docker docker-engine docker.io containerd runc<br></code></pre></td></tr></table></figure></li>
@@ -378,8 +369,8 @@
         <category>Linux</category>
       </categories>
       <tags>
-        <tag>Docker</tag>
         <tag>linux</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
 </search>
