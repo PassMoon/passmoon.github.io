@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Docker简单命令</title>
+    <url>/2022/11/08/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="1-查看容器"><a href="#1-查看容器" class="headerlink" title="1. 查看容器"></a>1. 查看容器</h2><p>列出已经创建的所有容器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -a    <br></code></pre></td></tr></table></figure>
+
+<p>列出正在运行的容器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -s <br></code></pre></td></tr></table></figure>
+
+<h2 id="2-启动容器"><a href="#2-启动容器" class="headerlink" title="2. 启动容器"></a>2. 启动容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker start [container ID]<br></code></pre></td></tr></table></figure>
+
+<h2 id="3-进入已经运行的容器"><a href="#3-进入已经运行的容器" class="headerlink" title="3. 进入已经运行的容器"></a>3. 进入已经运行的容器</h2><p>方法一（推荐）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker attach [container ID]<br></code></pre></td></tr></table></figure>
+
+<p>方法二（未使用）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it [container ID] /bin/bash<br></code></pre></td></tr></table></figure>
+
+<h2 id="4-退出容器"><a href="#4-退出容器" class="headerlink" title="4. 退出容器"></a>4. 退出容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="5-停用容器"><a href="#5-停用容器" class="headerlink" title="5. 停用容器"></a>5. 停用容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker stop [container ID]<br></code></pre></td></tr></table></figure>
+
+
+
+<p>参考:<a href="https://blog.csdn.net/jghiof/article/details/117687974?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1">Docker简单容器命令</a></p>
+]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTTP基本概念</title>
     <url>/2022/10/17/HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<h1 id="HTTP基本概念"><a href="#HTTP基本概念" class="headerlink" title="HTTP基本概念"></a>HTTP基本概念</h1><p><strong>HTTP：</strong> Hyper Text Transfer Protocol ,超文本传输协议</p>
@@ -112,35 +144,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Docker简单命令</title>
-    <url>/2022/11/08/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="1-查看容器"><a href="#1-查看容器" class="headerlink" title="1. 查看容器"></a>1. 查看容器</h2><p>列出已经创建的所有容器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -a    <br></code></pre></td></tr></table></figure>
+    <title>Python注释</title>
+    <url>/2022/05/29/Python%E6%B3%A8%E9%87%8A/</url>
+    <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
+<h2 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h2><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-string">&#x27;&#x27;&#x27;  注释信息 &#x27;&#x27;&#x27;</span><br><span class="hljs-string">&quot;&quot;&quot; 注释信息 &quot;&quot;&quot;</span><br>多行行首添加<span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
 
-<p>列出正在运行的容器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker ps -s <br></code></pre></td></tr></table></figure>
-
-<h2 id="2-启动容器"><a href="#2-启动容器" class="headerlink" title="2. 启动容器"></a>2. 启动容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker start [container ID]<br></code></pre></td></tr></table></figure>
-
-<h2 id="3-进入已经运行的容器"><a href="#3-进入已经运行的容器" class="headerlink" title="3. 进入已经运行的容器"></a>3. 进入已经运行的容器</h2><p>方法一（推荐）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker attach [container ID]<br></code></pre></td></tr></table></figure>
-
-<p>方法二（未使用）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it [container ID] /bin/bash<br></code></pre></td></tr></table></figure>
-
-<h2 id="4-退出容器"><a href="#4-退出容器" class="headerlink" title="4. 退出容器"></a>4. 退出容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="5-停用容器"><a href="#5-停用容器" class="headerlink" title="5. 停用容器"></a>5. 停用容器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker stop [container ID]<br></code></pre></td></tr></table></figure>
-
-
-
-<p>参考:<a href="https://blog.csdn.net/jghiof/article/details/117687974?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-117687974-blog-124920551.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1">Docker简单容器命令</a></p>
+<h2 id="特殊注释"><a href="#特殊注释" class="headerlink" title="特殊注释"></a>特殊注释</h2><p><code>#!/usr/bin/python</code> 表明python解释器所在路径，一般在Linux下使用</p>
+<p><code># encoding=utf-8</code>（中文支持）<br><strong>注：Python3直接支持，Python2默认不支持</strong><br><strong># encoding=utf-8、# coding=utf-8</strong><br><strong>正规的Python推荐写法：# <em>*</em> coding:utf-8 <em>*</em></strong></p>
 ]]></content>
       <categories>
-        <category>Docker</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>Docker</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -201,22 +217,6 @@
       <tags>
         <tag>linux</tag>
         <tag>Kali</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python注释</title>
-    <url>/2022/05/29/Python%E6%B3%A8%E9%87%8A/</url>
-    <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
-<h2 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h2><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-string">&#x27;&#x27;&#x27;  注释信息 &#x27;&#x27;&#x27;</span><br><span class="hljs-string">&quot;&quot;&quot; 注释信息 &quot;&quot;&quot;</span><br>多行行首添加<span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="特殊注释"><a href="#特殊注释" class="headerlink" title="特殊注释"></a>特殊注释</h2><p><code>#!/usr/bin/python</code> 表明python解释器所在路径，一般在Linux下使用</p>
-<p><code># encoding=utf-8</code>（中文支持）<br><strong>注：Python3直接支持，Python2默认不支持</strong><br><strong># encoding=utf-8、# coding=utf-8</strong><br><strong>正规的Python推荐写法：# <em>*</em> coding:utf-8 <em>*</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
