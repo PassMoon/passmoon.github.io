@@ -16,23 +16,22 @@
   <meta name="author" content="PassMoon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="新搭建的Kali系统所需的常用配置">
+    <meta name="description" content="SQL注入基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kali初始配置">
-<meta property="og:url" content="http://example.com/2022/11/08/Linux/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="PHP基础">
+<meta property="og:url" content="http://example.com/2022/11/09/security/PHP%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="MACHINE">
-<meta property="og:description" content="新搭建的Kali系统所需的常用配置">
+<meta property="og:description" content="SQL注入基础">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-08T14:42:18.000Z">
-<meta property="article:modified_time" content="2022-11-09T07:11:02.938Z">
+<meta property="article:published_time" content="2022-11-09T07:35:02.000Z">
+<meta property="article:modified_time" content="2022-11-10T00:37:59.124Z">
 <meta property="article:author" content="PassMoon">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="Kali">
+<meta property="article:tag" content="CTF">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Kali初始配置 - MACHINE</title>
+  <title>PHP基础 - MACHINE</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Kali初始配置"></span>
+            <span id="subtitle" data-typed-text="PHP基础"></span>
           
         </div>
 
@@ -208,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-08 22:42" pubdate>
-          2022年11月8日 晚上
+        <time datetime="2022-11-09 15:35" pubdate>
+          2022年11月9日 下午
         </time>
       </span>
     
@@ -253,59 +252,69 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Kali初始配置</h1>
+            <h1 style="display: none">PHP基础</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Kali-初始化配置"><a href="#Kali-初始化配置" class="headerlink" title="Kali 初始化配置"></a>Kali 初始化配置</h1><h2 id="1-更换源"><a href="#1-更换源" class="headerlink" title="1. 更换源"></a>1. 更换源</h2><ol>
-<li><p>查找kali源</p>
-<p><a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/">阿里镜像站</a></p>
-</li>
-<li><p>更换kali源</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo vim /etc/apt/sources.list<br></code></pre></td></tr></table></figure></li>
-<li><p>更新升级kali内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
+                <h1 id="PHP基础"><a href="#PHP基础" class="headerlink" title="PHP基础"></a>PHP基础</h1><p>主要介绍 PHP 基础，从 PHP 简介、PHP 基本语法、超全局变量、正则表达式和 PHP 危险<br>函数等几个方面来进一步了解 PHP。</p>
+<h2 id="1-2-1-PHP-简介"><a href="#1-2-1-PHP-简介" class="headerlink" title="1.2.1 PHP 简介"></a>1.2.1 PHP 简介</h2><p>PHP，全称 Hypertext Preprocessor，即超文本预处理器，是一种通用开源脚本语言。PHP 代码在服务器上执行时，结果以纯 HTML 形式返回给浏览器。</p>
+<p>PHP 文件以 .php 为后缀，包含 PHP 代码、HTML 代码及 JS 代码；PHP 代码也可以在 HTML 文档<br>中运行，可以放在任何位置。</p>
+<h2 id="1-2-2-PHP-基本语法"><a href="#1-2-2-PHP-基本语法" class="headerlink" title="1.2.2 PHP 基本语法"></a>1.2.2 PHP 基本语法</h2><p>PHP 脚本以 <strong><?php** 开头，以 **?></strong> 结尾。</p>
+<p>PHP 有三种注释方式，分别是<strong>脚本注释、单行注释和多行注释</strong>。</p>
+<p>PHP <strong>变量以 $ 符号开头</strong>，其后是变量的名称。变量名称必须以字母或下划线开头，并且只能包<br>含字母、数字和下划线。</p>
+<p>在 PHP 中，<strong>有两种基本的输出方法：echo 和 print。</strong>echo 可以输出一个或多个字符串，无返回值；print 只能输出一个字符串，返回值为“1”。还有 <strong>var_dump () 函数</strong>能显示关于一个或多个表达式的结构信息，包括表达式的类型与值。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-comment">//php 代码</span><br><span class="hljs-comment"># 脚本注释</span><br><span class="hljs-comment">// 单行注释</span><br><span class="hljs-comment">/* 多行注释 */</span><br><span class="hljs-variable">$a</span> = <span class="hljs-string">&quot;hongri&quot;</span>;<br><span class="hljs-variable">$b</span> = <span class="hljs-string">&quot;sec&quot;</span>;<br><span class="hljs-variable">$c</span> = <span class="hljs-variable">$a</span>.<span class="hljs-variable">$b</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$a</span>.<span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<span class="hljs-comment">// 输出 hongri。</span><br><span class="hljs-keyword">print</span> <span class="hljs-variable">$c</span>.<span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<span class="hljs-comment">// 输出 hongrisec。</span><br><span class="hljs-title function_ invoke__">var_dump</span> (<span class="hljs-variable">$a</span>);<span class="hljs-comment">// 输出变量的数据类型和值。</span><br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
 
-<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53030229/article/details/123125352">Kali更换源</a></p>
+<h2 id="1-2-3-运算符"><a href="#1-2-3-运算符" class="headerlink" title="1.2.3 运算符"></a>1.2.3 运算符</h2><ol>
+<li><p>三元运算符</p>
+<p>格式：表达式 1 ？表达式 2：表达式 3<br>含义：如果表达式 1 为真，执行表达式 2；如果表达式 1 为假，则执行表达式 3。</p>
+</li>
+<li><p>字符串运算符</p>
+<p>‘<strong>.</strong>‘起连接作用</p>
+</li>
+<li><p>类型运算符</p>
+<p>instanceof 用于确定一个 PHP 变量是否属于某一类（class）的实例。</p>
 </li>
 </ol>
-<h2 id="2-安装中文输入法（ibus）"><a href="#2-安装中文输入法（ibus）" class="headerlink" title="2. 安装中文输入法（ibus）"></a>2. 安装中文输入法（ibus）</h2><ol>
-<li><p>打开终端，安装ibus输入法</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install ibus ibus-pinyin<br></code></pre></td></tr></table></figure></li>
-<li><p>输入 im-config</p>
-<p>若出错，提示安装zenity</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install zenity<br></code></pre></td></tr></table></figure></li>
-<li><p>再次输入im-config</p>
-<p>依次点击 “确定”-“是”</p>
-<p>选中<strong>“ibus”</strong>，然后点击确定</p>
-<p>确定后，又会弹出一个框，确定</p>
+<h2 id="1-2-4-和-的区别"><a href="#1-2-4-和-的区别" class="headerlink" title="1.2.4 == 和 === 的区别"></a>1.2.4 == 和 === 的区别</h2><p>== 比较两个变量的值，不比较数据类型；=== 比较两个变量的值和类型。</p>
+<h2 id="1-2-5-超全局变量"><a href="#1-2-5-超全局变量" class="headerlink" title="1.2.5 超全局变量"></a>1.2.5 超全局变量</h2><p>超全局变量是在全部作用域中始终可用的内置变量。在函数或方法中无需执行 global $variable；<br>就可以访问它们。</p>
+<p>这些超全局变量如下。</p>
+<ul>
+<li><p> $GLOBALS：包含了全部变量的全局组合数组。变量的名字就是数组的键。</p>
 </li>
-<li><p>输入 ibus-setup</p>
-<p>“添加-中文-pinyin-添加”即可</p>
+<li><p> $_SERVER：包含了诸如头信息（header）、路径（path），以及脚本位置（script locations）等信息的数组。这个数组中的项目由 Web 服务器创建。</p>
 </li>
-<li><p>最后一步，重启即可 (reboot)</p>
+<li><p> $_GET：通过 URL 参数传递给当前脚本的变量的数组。</p>
+</li>
+<li><p> $_POST：当 HTTP POST 请求的 Content-Type 是 application/x-www-form-urlencoded 或 multipart/form-data 时，会将变量以关联数组形式传入当前脚本。</p>
+</li>
+<li><p> $__REQUEST：默认情况下包含了 $_GET、$_POST 和 $_COOKIE 的数组。</p>
+</li>
+<li><p> $_COOKIE：通过 HTTP Cookies 方式传递给当前脚本的变量的数组。</p>
+</li>
+<li><p> $_SESSION：当前脚本可用 SESSION 变量的数组。</p>
+</li>
+<li><p> $_FILES：通过 HTTP POST 方式上传到当前脚本的项目的数组。</p>
+</li>
+<li><p> $_ENV：通过环境方式传递给当前脚本的变量的数组。</p>
+</li>
+</ul>
+<h2 id="1-2-6-魔术常量和魔术方法"><a href="#1-2-6-魔术常量和魔术方法" class="headerlink" title="1.2.6 魔术常量和魔术方法"></a>1.2.6 魔术常量和魔术方法</h2><ol>
+<li><p>魔术常量</p>
+<p>魔术常量是 PHP 向它运行的任何脚本提供的大量的预定义常量。魔术常量其实不是常量，可以理解为特殊的常量，以下介绍的 5 个魔术常量随位置而改变。</p>
+<ul>
+<li> __LINE__：表示文件中的当前行号。不区分大小写。</li>
+<li> __FILE__：表示文件完整的路径和命名。不区分大小写。</li>
+<li> __FUNCTION__：表示函数名称。区分大小写。</li>
+<li> __CLASS__：表示类的名称。区分大小写。</li>
+<li> __METHOD__：表示类的方法的名称。区分大小写。</li>
+</ul>
+</li>
+<li><p>魔术方法</p>
+<p>都是以两个下划线开头。</p>
 </li>
 </ol>
-<p>参考：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/114211319">kali怎么安装中文输入法</a></p>
-<h2 id="3-安装git"><a href="#3-安装git" class="headerlink" title="3. 安装git"></a>3. 安装git</h2><ol>
-<li><p>安装git</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt-get install git<br></code></pre></td></tr></table></figure></li>
-<li><p>添加git服务用户</p>
-<p>邮箱：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.email <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>用户：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;Double-Blank&quot;</span> <br></code></pre></td></tr></table></figure>
-
-<p>使用命令查看是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global --list<br></code></pre></td></tr></table></figure></li>
-<li><p>生成ssh公钥</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li><p>在代码托管平台上添加SSH公匙</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mousepad /home/advance/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42815873/article/details/121977771">在kali linux上安装git与push提交</a></p>
 
                 
               </div>
@@ -324,7 +333,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
+  <a href="/categories/Cyberspace-Security/" class="category-chain-item">Cyberspace Security</a>
   
   
 
@@ -339,9 +348,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/linux/">#linux</a>
-      
-        <a href="/tags/Kali/">#Kali</a>
+        <a href="/tags/CTF/">#CTF</a>
       
     </div>
   
@@ -353,8 +360,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Kali初始配置</div>
-      <div>http://example.com/2022/11/08/Linux/Kali初始配置/</div>
+      <div>PHP基础</div>
+      <div>http://example.com/2022/11/09/security/PHP基础/</div>
     </div>
     <div class="license-meta">
       
@@ -366,7 +373,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月8日</div>
+          <div>2022年11月9日</div>
         </div>
       
       
@@ -398,9 +405,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/09/security/Tools-of-security/" title="Tools of security">
+                      <a href="/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/" title="深度学习相关技巧">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Tools of security</span>
+                        <span class="hidden-mobile">深度学习相关技巧</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -408,8 +415,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/08/tools/Docker%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" title="Docker简单命令">
-                        <span class="hidden-mobile">Docker简单命令</span>
+                      <a href="/2022/11/09/security/Tools-of-security/" title="Tools of security">
+                        <span class="hidden-mobile">Tools of security</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
