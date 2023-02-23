@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2023/02/23/artificial%20intelligence/%E4%B9%A6%E5%8D%95/</url>
-    <content><![CDATA[<ul>
-<li><input disabled type="checkbox"> 张筑生. 数学分析新讲</li>
-<li><input disabled type="checkbox"> 史蒂文J.利昂. 线性代数</li>
-<li><input disabled type="checkbox"> Horn R, Johnson C. 矩阵分析</li>
-<li><input disabled type="checkbox"> Boyd S. 凸优化</li>
-<li><input disabled type="checkbox"> Bertsekas D. 非线性规划 第三版</li>
-<li><input disabled type="checkbox"> 欧斐君. 变分法及其应用：物理、力学、工程中的经典建模</li>
-<li><input disabled type="checkbox"> Sra S, Nowozin S, Wright SJ. Optimization for machine learning</li>
-<li><input disabled type="checkbox"> 盛骤. 概率论与数理统计 第九版</li>
-<li><input disabled type="checkbox"> Ross S. 随机过程 第二版</li>
-<li><input disabled type="checkbox"> West D. 图论导引</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>Python注释</title>
     <url>/2022/05/29/algorithms%20and%20programming/Python%E6%B3%A8%E9%87%8A/</url>
     <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
@@ -31,6 +14,58 @@
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中文乱码</title>
+    <url>/2022/05/29/algorithms%20and%20programming/%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
+字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
+字符（Character）：是一个信息单位，是各种文字和符号的统称
+字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
+字符码（Code Point）：字符集中每个字符的数字编号
+字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
+编码（Encoding）：编码的过程是将字符转换成字节流
+解码 （Decoding）：解码的过程是将字节流解析为字符
+</code></pre>
+<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
+<ul>
+<li>首先把字符转换成数字</li>
+<li>直接存储数字</li>
+</ul>
+<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
+<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
+<p><em>注：utf-8采用可变字节存储方式</em></p>
+]]></content>
+      <categories>
+        <category>common problem</category>
+      </categories>
+      <tags>
+        <tag>Garbled code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人工智能数学基础书单</title>
+    <url>/2023/02/23/artificial%20intelligence/%E4%B9%A6%E5%8D%95/</url>
+    <content><![CDATA[<ul>
+<li>张筑生. 数学分析新讲</li>
+<li>史蒂文J.利昂. 线性代数</li>
+<li>Horn R, Johnson C. 矩阵分析</li>
+<li>Boyd S. 凸优化</li>
+<li>Bertsekas D. 非线性规划 第三版</li>
+<li>欧斐君. 变分法及其应用：物理、力学、工程中的经典建模</li>
+<li>Sra S, Nowozin S, Wright SJ. Optimization for machine learning</li>
+<li>盛骤. 概率论与数理统计 第九版</li>
+<li>Ross S. 随机过程 第二版</li>
+<li>West D. 图论导引</li>
+</ul>
+]]></content>
+      <categories>
+        <category>BLOG</category>
+      </categories>
+      <tags>
+        <tag>artificial intelligence</tag>
+        <tag>math</tag>
       </tags>
   </entry>
   <entry>
@@ -132,35 +167,7 @@
         <category>Deep Learning</category>
       </categories>
       <tags>
-        <tag>Deep Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>中文乱码</title>
-    <url>/2022/05/29/algorithms%20and%20programming/%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
-字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
-字符（Character）：是一个信息单位，是各种文字和符号的统称
-字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
-字符码（Code Point）：字符集中每个字符的数字编号
-字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
-编码（Encoding）：编码的过程是将字符转换成字节流
-解码 （Decoding）：解码的过程是将字节流解析为字符
-</code></pre>
-<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
-<ul>
-<li>首先把字符转换成数字</li>
-<li>直接存储数字</li>
-</ul>
-<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
-<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
-<p><em>注：utf-8采用可变字节存储方式</em></p>
-]]></content>
-      <categories>
-        <category>common problem</category>
-      </categories>
-      <tags>
-        <tag>Garbled code</tag>
+        <tag>artificial intelligence</tag>
       </tags>
   </entry>
   <entry>
@@ -275,58 +282,6 @@
       </tags>
   </entry>
   <entry>
-    <title>linux intasll Docker</title>
-    <url>/2022/11/08/linux/linux-intasll-Docker/</url>
-    <content><![CDATA[<h1 id="Linux-安装-Docker"><a href="#Linux-安装-Docker" class="headerlink" title="Linux 安装 Docker"></a>Linux 安装 Docker</h1><h2 id="1-Ubuntu"><a href="#1-Ubuntu" class="headerlink" title="1. Ubuntu"></a>1. Ubuntu</h2><ol>
-<li><p>卸载旧版</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get remove docker docker-engine docker.io containerd runc<br></code></pre></td></tr></table></figure></li>
-<li><p>终端输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt update<br>apt-get install ca-certificates curl gnupg lsb-release<br></code></pre></td></tr></table></figure></li>
-<li><p>安装证书</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
-<li><p>写入软件源信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo add-apt-repository <span class="hljs-string">&quot;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu <span class="hljs-subst">$(lsb_release -cs)</span> stable&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li><p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt-get install docker-ce docker-ce-cli containerd.io<br></code></pre></td></tr></table></figure></li>
-<li><p>启动Docker</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start docker<br></code></pre></td></tr></table></figure></li>
-<li><p>安装工具</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get -y install apt-transport-https ca-certificates curl software-properties-common<br></code></pre></td></tr></table></figure></li>
-<li><p>重启docker</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">service docker restart<br></code></pre></td></tr></table></figure></li>
-<li><p>查看docker版本 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker version<br></code></pre></td></tr></table></figure></li>
-<li><p>查看镜像</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker images<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a href="https://blog.csdn.net/u012563853/article/details/125295985">Ubuntu安装docker</a></p>
-<h2 id="2-Kali-linux"><a href="#2-Kali-linux" class="headerlink" title="2. Kali linux"></a>2. Kali linux</h2><ol>
-<li><p>添加Docker官方的GPG密钥</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">curl  -fsSL https:<span class="hljs-regexp">//</span>download.docker.com<span class="hljs-regexp">/linux/</span>debian/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
-<li><p>更新源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;deb https://download.docker.com/linux/debian stretch stable&#x27;</span>&gt; /etc/apt/sources.list.d/docker.list<br></code></pre></td></tr></table></figure></li>
-<li><p>直接导入证书</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install apt-transport-https  ca-certificates  curl  gnupg2  software-properties-common<br></code></pre></td></tr></table></figure></li>
-<li><p>系统更新</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get update<br></code></pre></td></tr></table></figure></li>
-<li><p>安装docker</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install docker.io<br></code></pre></td></tr></table></figure></li>
-<li><p>检查docker安装是否成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker -v<br></code></pre></td></tr></table></figure></li>
-<li><p>docker安装成功后，需要安装compose</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt install docker-compose<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a href="https://blog.csdn.net/aodechudawei/article/details/122450720">kali安装docker</a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Kali初始配置</title>
     <url>/2022/11/08/linux/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="Kali-初始化配置"><a href="#Kali-初始化配置" class="headerlink" title="Kali 初始化配置"></a>Kali 初始化配置</h1><h2 id="1-更换源"><a href="#1-更换源" class="headerlink" title="1. 更换源"></a>1. 更换源</h2><ol>
@@ -384,6 +339,58 @@
       <tags>
         <tag>linux</tag>
         <tag>Kali</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux intasll Docker</title>
+    <url>/2022/11/08/linux/linux-intasll-Docker/</url>
+    <content><![CDATA[<h1 id="Linux-安装-Docker"><a href="#Linux-安装-Docker" class="headerlink" title="Linux 安装 Docker"></a>Linux 安装 Docker</h1><h2 id="1-Ubuntu"><a href="#1-Ubuntu" class="headerlink" title="1. Ubuntu"></a>1. Ubuntu</h2><ol>
+<li><p>卸载旧版</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get remove docker docker-engine docker.io containerd runc<br></code></pre></td></tr></table></figure></li>
+<li><p>终端输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt update<br>apt-get install ca-certificates curl gnupg lsb-release<br></code></pre></td></tr></table></figure></li>
+<li><p>安装证书</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
+<li><p>写入软件源信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo add-apt-repository <span class="hljs-string">&quot;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu <span class="hljs-subst">$(lsb_release -cs)</span> stable&quot;</span><br></code></pre></td></tr></table></figure></li>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt-get install docker-ce docker-ce-cli containerd.io<br></code></pre></td></tr></table></figure></li>
+<li><p>启动Docker</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start docker<br></code></pre></td></tr></table></figure></li>
+<li><p>安装工具</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get -y install apt-transport-https ca-certificates curl software-properties-common<br></code></pre></td></tr></table></figure></li>
+<li><p>重启docker</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">service docker restart<br></code></pre></td></tr></table></figure></li>
+<li><p>查看docker版本 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker version<br></code></pre></td></tr></table></figure></li>
+<li><p>查看镜像</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker images<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a href="https://blog.csdn.net/u012563853/article/details/125295985">Ubuntu安装docker</a></p>
+<h2 id="2-Kali-linux"><a href="#2-Kali-linux" class="headerlink" title="2. Kali linux"></a>2. Kali linux</h2><ol>
+<li><p>添加Docker官方的GPG密钥</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">curl  -fsSL https:<span class="hljs-regexp">//</span>download.docker.com<span class="hljs-regexp">/linux/</span>debian/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
+<li><p>更新源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;deb https://download.docker.com/linux/debian stretch stable&#x27;</span>&gt; /etc/apt/sources.list.d/docker.list<br></code></pre></td></tr></table></figure></li>
+<li><p>直接导入证书</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install apt-transport-https  ca-certificates  curl  gnupg2  software-properties-common<br></code></pre></td></tr></table></figure></li>
+<li><p>系统更新</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get update<br></code></pre></td></tr></table></figure></li>
+<li><p>安装docker</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install docker.io<br></code></pre></td></tr></table></figure></li>
+<li><p>检查docker安装是否成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker -v<br></code></pre></td></tr></table></figure></li>
+<li><p>docker安装成功后，需要安装compose</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt install docker-compose<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a href="https://blog.csdn.net/aodechudawei/article/details/122450720">kali安装docker</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>

@@ -4,13 +4,27 @@
   
   
   <entry>
-    <title></title>
+    <title>人工智能数学基础书单</title>
     <link href="/2023/02/23/artificial%20intelligence/%E4%B9%A6%E5%8D%95/"/>
     <url>/2023/02/23/artificial%20intelligence/%E4%B9%A6%E5%8D%95/</url>
     
-    <content type="html"><![CDATA[<ul><li><input disabled type="checkbox"> 张筑生. 数学分析新讲</li><li><input disabled type="checkbox"> 史蒂文J.利昂. 线性代数</li><li><input disabled type="checkbox"> Horn R, Johnson C. 矩阵分析</li><li><input disabled type="checkbox"> Boyd S. 凸优化</li><li><input disabled type="checkbox"> Bertsekas D. 非线性规划 第三版</li><li><input disabled type="checkbox"> 欧斐君. 变分法及其应用：物理、力学、工程中的经典建模</li><li><input disabled type="checkbox"> Sra S, Nowozin S, Wright SJ. Optimization for machine learning</li><li><input disabled type="checkbox"> 盛骤. 概率论与数理统计 第九版</li><li><input disabled type="checkbox"> Ross S. 随机过程 第二版</li><li><input disabled type="checkbox"> West D. 图论导引</li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li>张筑生. 数学分析新讲</li><li>史蒂文J.利昂. 线性代数</li><li>Horn R, Johnson C. 矩阵分析</li><li>Boyd S. 凸优化</li><li>Bertsekas D. 非线性规划 第三版</li><li>欧斐君. 变分法及其应用：物理、力学、工程中的经典建模</li><li>Sra S, Nowozin S, Wright SJ. Optimization for machine learning</li><li>盛骤. 概率论与数理统计 第九版</li><li>Ross S. 随机过程 第二版</li><li>West D. 图论导引</li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>BLOG</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>artificial intelligence</tag>
+      
+      <tag>math</tag>
+      
+    </tags>
     
   </entry>
   
@@ -33,7 +47,7 @@
     
     <tags>
       
-      <tag>Deep Learning</tag>
+      <tag>artificial intelligence</tag>
       
     </tags>
     
