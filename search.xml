@@ -1,115 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Kali初始配置</title>
-    <url>/2022/11/08/Linux/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Kali-初始化配置"><a href="#Kali-初始化配置" class="headerlink" title="Kali 初始化配置"></a>Kali 初始化配置</h1><h2 id="1-更换源"><a href="#1-更换源" class="headerlink" title="1. 更换源"></a>1. 更换源</h2><ol>
-<li><p>查找kali源</p>
-<p><a href="https://developer.aliyun.com/mirror/">阿里镜像站</a></p>
-</li>
-<li><p>更换kali源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo vim /etc/apt/sources.list<br></code></pre></td></tr></table></figure></li>
-<li><p>更新升级kali内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
-
-<p>参考：<a href="https://blog.csdn.net/qq_53030229/article/details/123125352">Kali更换源</a></p>
-</li>
-</ol>
-<h2 id="2-安装中文输入法（ibus）"><a href="#2-安装中文输入法（ibus）" class="headerlink" title="2. 安装中文输入法（ibus）"></a>2. 安装中文输入法（ibus）</h2><ol>
-<li><p>打开终端，安装ibus输入法</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install ibus ibus-pinyin<br></code></pre></td></tr></table></figure></li>
-<li><p>输入 im-config</p>
-<p>若出错，提示安装zenity</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install zenity<br></code></pre></td></tr></table></figure></li>
-<li><p>再次输入im-config</p>
-<p>依次点击 “确定”-“是”</p>
-<p>选中<strong>“ibus”</strong>，然后点击确定</p>
-<p>确定后，又会弹出一个框，确定</p>
-</li>
-<li><p>输入 ibus-setup</p>
-<p>“添加-中文-pinyin-添加”即可</p>
-</li>
-<li><p>最后一步，重启即可 (reboot)</p>
-</li>
-</ol>
-<p>参考：<a href="https://zhuanlan.zhihu.com/p/114211319">kali怎么安装中文输入法</a></p>
-<h2 id="3-安装git"><a href="#3-安装git" class="headerlink" title="3. 安装git"></a>3. 安装git</h2><ol>
-<li><p>安装git</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install git<br></code></pre></td></tr></table></figure></li>
-<li><p>添加git服务用户</p>
-<p>邮箱：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global user.email <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>用户：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;Double-Blank&quot;</span> <br></code></pre></td></tr></table></figure>
-
-<p>使用命令查看是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global --list<br></code></pre></td></tr></table></figure></li>
-<li><p>生成ssh公钥</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li><p>在代码托管平台上添加SSH公匙</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">mousepad /home/advance/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a href="https://blog.csdn.net/weixin_42815873/article/details/121977771">在kali linux上安装git与push提交</a></p>
+    <title></title>
+    <url>/2023/02/23/artificial%20intelligence/%E4%B9%A6%E5%8D%95/</url>
+    <content><![CDATA[<ul>
+<li><input disabled type="checkbox"> 张筑生. 数学分析新讲</li>
+<li><input disabled type="checkbox"> 史蒂文J.利昂. 线性代数</li>
+<li><input disabled type="checkbox"> Horn R, Johnson C. 矩阵分析</li>
+<li><input disabled type="checkbox"> Boyd S. 凸优化</li>
+<li><input disabled type="checkbox"> Bertsekas D. 非线性规划 第三版</li>
+<li><input disabled type="checkbox"> 欧斐君. 变分法及其应用：物理、力学、工程中的经典建模</li>
+<li><input disabled type="checkbox"> Sra S, Nowozin S, Wright SJ. Optimization for machine learning</li>
+<li><input disabled type="checkbox"> 盛骤. 概率论与数理统计 第九版</li>
+<li><input disabled type="checkbox"> Ross S. 随机过程 第二版</li>
+<li><input disabled type="checkbox"> West D. 图论导引</li>
+</ul>
 ]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>Kali</tag>
-      </tags>
   </entry>
   <entry>
-    <title>linux intasll Docker</title>
-    <url>/2022/11/08/Linux/linux-intasll-Docker/</url>
-    <content><![CDATA[<h1 id="Linux-安装-Docker"><a href="#Linux-安装-Docker" class="headerlink" title="Linux 安装 Docker"></a>Linux 安装 Docker</h1><h2 id="1-Ubuntu"><a href="#1-Ubuntu" class="headerlink" title="1. Ubuntu"></a>1. Ubuntu</h2><ol>
-<li><p>卸载旧版</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get remove docker docker-engine docker.io containerd runc<br></code></pre></td></tr></table></figure></li>
-<li><p>终端输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt update<br>apt-get install ca-certificates curl gnupg lsb-release<br></code></pre></td></tr></table></figure></li>
-<li><p>安装证书</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
-<li><p>写入软件源信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo add-apt-repository <span class="hljs-string">&quot;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu <span class="hljs-subst">$(lsb_release -cs)</span> stable&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li><p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt-get install docker-ce docker-ce-cli containerd.io<br></code></pre></td></tr></table></figure></li>
-<li><p>启动Docker</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start docker<br></code></pre></td></tr></table></figure></li>
-<li><p>安装工具</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get -y install apt-transport-https ca-certificates curl software-properties-common<br></code></pre></td></tr></table></figure></li>
-<li><p>重启docker</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">service docker restart<br></code></pre></td></tr></table></figure></li>
-<li><p>查看docker版本 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker version<br></code></pre></td></tr></table></figure></li>
-<li><p>查看镜像</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker images<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a href="https://blog.csdn.net/u012563853/article/details/125295985">Ubuntu安装docker</a></p>
-<h2 id="2-Kali-linux"><a href="#2-Kali-linux" class="headerlink" title="2. Kali linux"></a>2. Kali linux</h2><ol>
-<li><p>添加Docker官方的GPG密钥</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">curl  -fsSL https:<span class="hljs-regexp">//</span>download.docker.com<span class="hljs-regexp">/linux/</span>debian/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
-<li><p>更新源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;deb https://download.docker.com/linux/debian stretch stable&#x27;</span>&gt; /etc/apt/sources.list.d/docker.list<br></code></pre></td></tr></table></figure></li>
-<li><p>直接导入证书</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install apt-transport-https  ca-certificates  curl  gnupg2  software-properties-common<br></code></pre></td></tr></table></figure></li>
-<li><p>系统更新</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get update<br></code></pre></td></tr></table></figure></li>
-<li><p>安装docker</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install docker.io<br></code></pre></td></tr></table></figure></li>
-<li><p>检查docker安装是否成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker -v<br></code></pre></td></tr></table></figure></li>
-<li><p>docker安装成功后，需要安装compose</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt install docker-compose<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>参考：<a href="https://blog.csdn.net/aodechudawei/article/details/122450720">kali安装docker</a></p>
+    <title>Python注释</title>
+    <url>/2022/05/29/algorithms%20and%20programming/Python%E6%B3%A8%E9%87%8A/</url>
+    <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
+<h2 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h2><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-string">&#x27;&#x27;&#x27;  注释信息 &#x27;&#x27;&#x27;</span><br><span class="hljs-string">&quot;&quot;&quot; 注释信息 &quot;&quot;&quot;</span><br>多行行首添加<span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="特殊注释"><a href="#特殊注释" class="headerlink" title="特殊注释"></a>特殊注释</h2><p><code>#!/usr/bin/python</code> 表明python解释器所在路径，一般在Linux下使用</p>
+<p><code># encoding=utf-8</code>（中文支持）<br><strong>注：Python3直接支持，Python2默认不支持</strong><br><strong># encoding=utf-8、# coding=utf-8</strong><br><strong>正规的Python推荐写法：# <em>*</em> coding:utf-8 <em>*</em></strong></p>
 ]]></content>
       <categories>
-        <category>Linux</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>Docker</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -121,12 +42,13 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SGD</span>:<br><br>    <span class="hljs-string">&quot;&quot;&quot;随机梯度下降法（Stochastic Gradient Descent）&quot;&quot;&quot;</span><br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, lr=<span class="hljs-number">0.01</span></span>):<br>        self.lr = lr<br>        <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">update</span>(<span class="hljs-params">self, params, grads</span>):<br>        <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> params.keys():<br>            params[key] -= self.lr * grads[key] <br><br></code></pre></td></tr></table></figure>
 
 <p>SGD 呈“之”字形移动。这是一个相当低效的路径。SGD 的<strong>缺点</strong>是，如果函数的形状非均向（anisotropic），比如呈延伸状，搜索的路径就会非常低效。SGD 低效的根本原因是，梯度的方向并没有指向最小值的方向。</p>
+<p>以下都以$f(x,y) = \frac{1}{20} x^2 + y^2$为例</p>
 <img src="/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于SGD的最优化的更新路径.png">
 
 <h3 id="1-2-Momentum"><a href="#1-2-Momentum" class="headerlink" title="1.2 Momentum"></a>1.2 Momentum</h3><p>Momentum 是“动量”的意思，和物理有关。用数学式表示 Momentum 方法，如下所示。<br>$$<br>\begin{aligned}<br>v \leftarrow \alpha v-\eta \frac{\partial L}{\partial W}\\<br>W \leftarrow W+v<br>\end{aligned}<br>$$<br>这里新出现了一个变量 v，对应物理上的速度。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Momentum</span>:<br><br>    <span class="hljs-string">&quot;&quot;&quot;Momentum SGD&quot;&quot;&quot;</span><br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, lr=<span class="hljs-number">0.01</span>, momentum=<span class="hljs-number">0.9</span></span>):<br>        self.lr = lr<br>        self.momentum = momentum<br>        self.v = <span class="hljs-literal">None</span><br>        <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">update</span>(<span class="hljs-params">self, params, grads</span>):<br>        <span class="hljs-keyword">if</span> self.v <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:<br>            self.v = &#123;&#125;<br>            <span class="hljs-keyword">for</span> key, val <span class="hljs-keyword">in</span> params.items():                                <br>                self.v[key] = np.zeros_like(val)<br>                <br>        <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> params.keys():<br>            self.v[key] = self.momentum*self.v[key] - self.lr*grads[key] <br>            params[key] += self.v[key]<br></code></pre></td></tr></table></figure>
 
-<p>和 SGD 相比，我们发现“之”字形的“程度”减轻了。这是因为虽然 x 轴方向上受到的力非常小，但<br>是一直在同一方向上受力，所以朝同一个方向会有一定的加速。反过来，虽然 y 轴方向上受到的力很大，但是因为交互地受到正方向和反方向的力，它们会互相抵消，所以 y 轴方向上的速度不稳定。因此，和 SGD 时的情形相比，可以更快地朝 x 轴方向靠近，减弱“之”字形的变动程度。</p>
+<p>和 SGD 相比，我们发现“之”字形的“程度”减轻了。这是因为虽然 x 轴方向上受到的力非常小，但是一直在同一方向上受力，所以朝同一个方向会有一定的加速。反过来，虽然 y 轴方向上受到的力很大，但是因为交互地受到正方向和反方向的力，它们会互相抵消，所以 y 轴方向上的速度不稳定。因此，和 SGD 时的情形相比，可以更快地朝 x 轴方向靠近，减弱“之”字形的变动程度。</p>
 <img src="/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于Momentum的最优化的更新路径.png">
 
 <h3 id="1-3-AdaGrad"><a href="#1-3-AdaGrad" class="headerlink" title="1.3. AdaGrad"></a>1.3. AdaGrad</h3><p>在神经网络的学习中，学习率（数学式中记为 η）的值很重要。学习率过小，会导致学习花费过多时间；反过来，学习率过大，则会导致学习发散而不能正确进行。</p>
@@ -211,6 +133,34 @@
       </categories>
       <tags>
         <tag>Deep Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中文乱码</title>
+    <url>/2022/05/29/algorithms%20and%20programming/%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
+字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
+字符（Character）：是一个信息单位，是各种文字和符号的统称
+字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
+字符码（Code Point）：字符集中每个字符的数字编号
+字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
+编码（Encoding）：编码的过程是将字符转换成字节流
+解码 （Decoding）：解码的过程是将字节流解析为字符
+</code></pre>
+<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
+<ul>
+<li>首先把字符转换成数字</li>
+<li>直接存储数字</li>
+</ul>
+<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
+<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
+<p><em>注：utf-8采用可变字节存储方式</em></p>
+]]></content>
+      <categories>
+        <category>common problem</category>
+      </categories>
+      <tags>
+        <tag>Garbled code</tag>
       </tags>
   </entry>
   <entry>
@@ -325,139 +275,115 @@
       </tags>
   </entry>
   <entry>
-    <title>Python注释</title>
-    <url>/2022/05/29/algorithms%20and%20programming/Python%E6%B3%A8%E9%87%8A/</url>
-    <content><![CDATA[<h1 id="注释的分类"><a href="#注释的分类" class="headerlink" title="注释的分类"></a>注释的分类</h1><h2 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h2><p>利用    “<code>#</code> “<br>例如    <code># 单行注释 - 在此处写下下一行代码的含义</code></p>
-<h2 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h2><figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-string">&#x27;&#x27;&#x27;  注释信息 &#x27;&#x27;&#x27;</span><br><span class="hljs-string">&quot;&quot;&quot; 注释信息 &quot;&quot;&quot;</span><br>多行行首添加<span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="特殊注释"><a href="#特殊注释" class="headerlink" title="特殊注释"></a>特殊注释</h2><p><code>#!/usr/bin/python</code> 表明python解释器所在路径，一般在Linux下使用</p>
-<p><code># encoding=utf-8</code>（中文支持）<br><strong>注：Python3直接支持，Python2默认不支持</strong><br><strong># encoding=utf-8、# coding=utf-8</strong><br><strong>正规的Python推荐写法：# <em>*</em> coding:utf-8 <em>*</em></strong></p>
+    <title>linux intasll Docker</title>
+    <url>/2022/11/08/linux/linux-intasll-Docker/</url>
+    <content><![CDATA[<h1 id="Linux-安装-Docker"><a href="#Linux-安装-Docker" class="headerlink" title="Linux 安装 Docker"></a>Linux 安装 Docker</h1><h2 id="1-Ubuntu"><a href="#1-Ubuntu" class="headerlink" title="1. Ubuntu"></a>1. Ubuntu</h2><ol>
+<li><p>卸载旧版</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get remove docker docker-engine docker.io containerd runc<br></code></pre></td></tr></table></figure></li>
+<li><p>终端输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt update<br>apt-get install ca-certificates curl gnupg lsb-release<br></code></pre></td></tr></table></figure></li>
+<li><p>安装证书</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
+<li><p>写入软件源信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo add-apt-repository <span class="hljs-string">&quot;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu <span class="hljs-subst">$(lsb_release -cs)</span> stable&quot;</span><br></code></pre></td></tr></table></figure></li>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt-get install docker-ce docker-ce-cli containerd.io<br></code></pre></td></tr></table></figure></li>
+<li><p>启动Docker</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start docker<br></code></pre></td></tr></table></figure></li>
+<li><p>安装工具</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get -y install apt-transport-https ca-certificates curl software-properties-common<br></code></pre></td></tr></table></figure></li>
+<li><p>重启docker</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">service docker restart<br></code></pre></td></tr></table></figure></li>
+<li><p>查看docker版本 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker version<br></code></pre></td></tr></table></figure></li>
+<li><p>查看镜像</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker images<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a href="https://blog.csdn.net/u012563853/article/details/125295985">Ubuntu安装docker</a></p>
+<h2 id="2-Kali-linux"><a href="#2-Kali-linux" class="headerlink" title="2. Kali linux"></a>2. Kali linux</h2><ol>
+<li><p>添加Docker官方的GPG密钥</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">curl  -fsSL https:<span class="hljs-regexp">//</span>download.docker.com<span class="hljs-regexp">/linux/</span>debian/gpg | sudo apt-key add -<br></code></pre></td></tr></table></figure></li>
+<li><p>更新源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;deb https://download.docker.com/linux/debian stretch stable&#x27;</span>&gt; /etc/apt/sources.list.d/docker.list<br></code></pre></td></tr></table></figure></li>
+<li><p>直接导入证书</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install apt-transport-https  ca-certificates  curl  gnupg2  software-properties-common<br></code></pre></td></tr></table></figure></li>
+<li><p>系统更新</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get update<br></code></pre></td></tr></table></figure></li>
+<li><p>安装docker</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install docker.io<br></code></pre></td></tr></table></figure></li>
+<li><p>检查docker安装是否成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker -v<br></code></pre></td></tr></table></figure></li>
+<li><p>docker安装成功后，需要安装compose</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt install docker-compose<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a href="https://blog.csdn.net/aodechudawei/article/details/122450720">kali安装docker</a></p>
 ]]></content>
       <categories>
-        <category>Python</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>linux</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
-    <title>中文乱码</title>
-    <url>/2022/05/29/algorithms%20and%20programming/%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><pre><code class="hljs">比特位（Bit）：是计算机最小的存储单位，以0或1来表示比特位的值
-字节（Byte）：是计算机中数据存储的基本单元，一字节等于一个8个比特位
-字符（Character）：是一个信息单位，是各种文字和符号的统称
-字符集（Character Set）：是某个范围内字符的集合，不同的字符集规定了不同字符的个数
-字符码（Code Point）：字符集中每个字符的数字编号
-字符编码（Character Encoding）：是将字符集中的字符码映射为字节流的一种具体实现方案，常见有ASCII 编码、UTF-8 编码、GBK 编码
-编码（Encoding）：编码的过程是将字符转换成字节流
-解码 （Decoding）：解码的过程是将字节流解析为字符
-</code></pre>
-<h1 id="乱码原因"><a href="#乱码原因" class="headerlink" title="乱码原因"></a>乱码原因</h1><p>计算机存储字符：</p>
-<ul>
-<li>首先把字符转换成数字</li>
-<li>直接存储数字</li>
-</ul>
-<p>这样会产生两个问题：1.按照怎样的规范把字符转换成数字？2.按照怎样的方式存储数字（如：使用多少个字节？）</p>
-<p><strong>所以乱码的解决方法也就从两个角度出发：编码与译码是否使用同一种方式；存储数字方式是否相同。</strong></p>
-<p><em>注：utf-8采用可变字节存储方式</em></p>
-]]></content>
-      <categories>
-        <category>common problem</category>
-      </categories>
-      <tags>
-        <tag>Garbled code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PHP基础</title>
-    <url>/2022/11/09/security/PHP%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h1 id="PHP基础"><a href="#PHP基础" class="headerlink" title="PHP基础"></a>PHP基础</h1><p>主要介绍 PHP 基础，从 PHP 简介、PHP 基本语法、超全局变量、正则表达式和 PHP 危险<br>函数等几个方面来进一步了解 PHP。</p>
-<h2 id="1-2-1-PHP-简介"><a href="#1-2-1-PHP-简介" class="headerlink" title="1.2.1 PHP 简介"></a>1.2.1 PHP 简介</h2><p>PHP，全称 Hypertext Preprocessor，即超文本预处理器，是一种通用开源脚本语言。PHP 代码在服务器上执行时，结果以纯 HTML 形式返回给浏览器。</p>
-<p>PHP 文件以 .php 为后缀，包含 PHP 代码、HTML 代码及 JS 代码；PHP 代码也可以在 HTML 文档<br>中运行，可以放在任何位置。</p>
-<h2 id="1-2-2-PHP-基本语法"><a href="#1-2-2-PHP-基本语法" class="headerlink" title="1.2.2 PHP 基本语法"></a>1.2.2 PHP 基本语法</h2><p>PHP 脚本以 <strong><?php** 开头，以 **?></strong> 结尾。</p>
-<p>PHP 有三种注释方式，分别是<strong>脚本注释、单行注释和多行注释</strong>。</p>
-<p>PHP <strong>变量以 $ 符号开头</strong>，其后是变量的名称。变量名称必须以字母或下划线开头，并且只能包<br>含字母、数字和下划线。</p>
-<p>在 PHP 中，<strong>有两种基本的输出方法：echo 和 print。</strong>echo 可以输出一个或多个字符串，无返回值；print 只能输出一个字符串，返回值为“1”。还有 <strong>var_dump () 函数</strong>能显示关于一个或多个表达式的结构信息，包括表达式的类型与值。</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-comment">//php 代码</span><br><span class="hljs-comment"># 脚本注释</span><br><span class="hljs-comment">// 单行注释</span><br><span class="hljs-comment">/* 多行注释 */</span><br><span class="hljs-variable">$a</span> = <span class="hljs-string">&quot;hongri&quot;</span>;<br><span class="hljs-variable">$b</span> = <span class="hljs-string">&quot;sec&quot;</span>;<br><span class="hljs-variable">$c</span> = <span class="hljs-variable">$a</span>.<span class="hljs-variable">$b</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$a</span>.<span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<span class="hljs-comment">// 输出 hongri。</span><br><span class="hljs-keyword">print</span> <span class="hljs-variable">$c</span>.<span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<span class="hljs-comment">// 输出 hongrisec。</span><br><span class="hljs-title function_ invoke__">var_dump</span> (<span class="hljs-variable">$a</span>);<span class="hljs-comment">// 输出变量的数据类型和值。</span><br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+    <title>Kali初始配置</title>
+    <url>/2022/11/08/linux/Kali%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Kali-初始化配置"><a href="#Kali-初始化配置" class="headerlink" title="Kali 初始化配置"></a>Kali 初始化配置</h1><h2 id="1-更换源"><a href="#1-更换源" class="headerlink" title="1. 更换源"></a>1. 更换源</h2><ol>
+<li><p>查找kali源</p>
+<p><a href="https://developer.aliyun.com/mirror/">阿里镜像站</a></p>
+</li>
+<li><p>更换kali源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo vim /etc/apt/sources.list<br></code></pre></td></tr></table></figure></li>
+<li><p>更新升级kali内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
 
-<h2 id="1-2-3-运算符"><a href="#1-2-3-运算符" class="headerlink" title="1.2.3 运算符"></a>1.2.3 运算符</h2><ol>
-<li><p>三元运算符</p>
-<p>格式：表达式 1 ？表达式 2：表达式 3<br>含义：如果表达式 1 为真，执行表达式 2；如果表达式 1 为假，则执行表达式 3。</p>
-</li>
-<li><p>字符串运算符</p>
-<p>‘<strong>.</strong>‘起连接作用</p>
-</li>
-<li><p>类型运算符</p>
-<p>instanceof 用于确定一个 PHP 变量是否属于某一类（class）的实例。</p>
+<p>参考：<a href="https://blog.csdn.net/qq_53030229/article/details/123125352">Kali更换源</a></p>
 </li>
 </ol>
-<h2 id="1-2-4-和-的区别"><a href="#1-2-4-和-的区别" class="headerlink" title="1.2.4 == 和 === 的区别"></a>1.2.4 == 和 === 的区别</h2><p>== 比较两个变量的值，不比较数据类型；=== 比较两个变量的值和类型。</p>
-<h2 id="1-2-5-超全局变量"><a href="#1-2-5-超全局变量" class="headerlink" title="1.2.5 超全局变量"></a>1.2.5 超全局变量</h2><p>超全局变量是在全部作用域中始终可用的内置变量。在函数或方法中无需执行 global $variable；<br>就可以访问它们。</p>
-<p>这些超全局变量如下。</p>
-<ul>
-<li><p> $GLOBALS：包含了全部变量的全局组合数组。变量的名字就是数组的键。</p>
+<h2 id="2-安装中文输入法（ibus）"><a href="#2-安装中文输入法（ibus）" class="headerlink" title="2. 安装中文输入法（ibus）"></a>2. 安装中文输入法（ibus）</h2><ol>
+<li><p>打开终端，安装ibus输入法</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install ibus ibus-pinyin<br></code></pre></td></tr></table></figure></li>
+<li><p>输入 im-config</p>
+<p>若出错，提示安装zenity</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install zenity<br></code></pre></td></tr></table></figure></li>
+<li><p>再次输入im-config</p>
+<p>依次点击 “确定”-“是”</p>
+<p>选中<strong>“ibus”</strong>，然后点击确定</p>
+<p>确定后，又会弹出一个框，确定</p>
 </li>
-<li><p> $_SERVER：包含了诸如头信息（header）、路径（path），以及脚本位置（script locations）等信息的数组。这个数组中的项目由 Web 服务器创建。</p>
+<li><p>输入 ibus-setup</p>
+<p>“添加-中文-pinyin-添加”即可</p>
 </li>
-<li><p> $_GET：通过 URL 参数传递给当前脚本的变量的数组。</p>
-</li>
-<li><p> $_POST：当 HTTP POST 请求的 Content-Type 是 application/x-www-form-urlencoded 或 multipart/form-data 时，会将变量以关联数组形式传入当前脚本。</p>
-</li>
-<li><p> $__REQUEST：默认情况下包含了 $_GET、$_POST 和 $_COOKIE 的数组。</p>
-</li>
-<li><p> $_COOKIE：通过 HTTP Cookies 方式传递给当前脚本的变量的数组。</p>
-</li>
-<li><p> $_SESSION：当前脚本可用 SESSION 变量的数组。</p>
-</li>
-<li><p> $_FILES：通过 HTTP POST 方式上传到当前脚本的项目的数组。</p>
-</li>
-<li><p> $_ENV：通过环境方式传递给当前脚本的变量的数组。</p>
-</li>
-</ul>
-<h2 id="1-2-6-魔术常量和魔术方法"><a href="#1-2-6-魔术常量和魔术方法" class="headerlink" title="1.2.6 魔术常量和魔术方法"></a>1.2.6 魔术常量和魔术方法</h2><ol>
-<li><p>魔术常量</p>
-<p>魔术常量是 PHP 向它运行的任何脚本提供的大量的预定义常量。魔术常量其实不是常量，可以理解为特殊的常量，以下介绍的 5 个魔术常量随位置而改变。</p>
-<ul>
-<li> __LINE__：表示文件中的当前行号。不区分大小写。</li>
-<li> __FILE__：表示文件完整的路径和命名。不区分大小写。</li>
-<li> __FUNCTION__：表示函数名称。区分大小写。</li>
-<li> __CLASS__：表示类的名称。区分大小写。</li>
-<li> __METHOD__：表示类的方法的名称。区分大小写。</li>
-</ul>
-</li>
-<li><p>魔术方法</p>
-<p>都是以两个下划线开头。</p>
+<li><p>最后一步，重启即可 (reboot)</p>
 </li>
 </ol>
+<p>参考：<a href="https://zhuanlan.zhihu.com/p/114211319">kali怎么安装中文输入法</a></p>
+<h2 id="3-安装git"><a href="#3-安装git" class="headerlink" title="3. 安装git"></a>3. 安装git</h2><ol>
+<li><p>安装git</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">apt-get install git<br></code></pre></td></tr></table></figure></li>
+<li><p>添加git服务用户</p>
+<p>邮箱：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global user.email <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>用户：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;Double-Blank&quot;</span> <br></code></pre></td></tr></table></figure>
+
+<p>使用命令查看是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git config --global --list<br></code></pre></td></tr></table></figure></li>
+<li><p>生成ssh公钥</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;email@163.com&quot;</span><br></code></pre></td></tr></table></figure></li>
+<li><p>在代码托管平台上添加SSH公匙</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">mousepad /home/advance/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>参考：<a href="https://blog.csdn.net/weixin_42815873/article/details/121977771">在kali linux上安装git与push提交</a></p>
 ]]></content>
       <categories>
-        <category>Cyberspace Security</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tools of security</title>
-    <url>/2022/11/09/security/Tools-of-security/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="fd5db854b0e2c941fa173465f5e012b8b1e1b5960bd2e27bea092e0b222e195a">1a122d849dea0253b8c2e18440c0e53b93e7c2dc25016e4b4aa4af6362977a04e8ec9a7add1528fb533e3ca54c9feed9a03564d295809821b74678804c493ebaf541d6dfaad94cb4d68cd0892d8b61842e7472f2206bbd5c9341ea2f80ad4a8115e11b8b29c03223a1a5c9f28973e845b76a66a04f1fcae59a838d4e70f516692ad118cb0eea96975afeafc42029a77b2cbece29f077aca05f65b78f4469bcc28d25019211858378e1dcb5d4cee03281f1eba5d5f36d4ec8c2f046029ac10586dcc030d3423e5ea98842816a3f2390b3799cba7f7c2a231edb717b38017a364b0afe4f646b24c65ef6443a58fc25608a1b5862367901a12d5e2400c0cb9e2173e6b5200e9ade2adcdc3f16ac60734fdea310cb2f4e2ecc566b1c1336664b930e90bdf2bdfbc9a4f5f1e18f42b5528fbcce5236aef2d7cc811ad5a873cd7be7da26d8f3dfcf11c708608c6188aefe8ec802fc7927b4a18d1f4b6069477991b5ff147467b303bba34e744554564f6d309b7b49a028d3343118cf7ee60a83c8f4d8fc64143676763f312f1027aa26bd926205df0ffdae23ade47bb2f9dbaccbb454acee12d0983bb454ca63690863c27a96467be1bbbefe2a5341ed543483f0aff8508c777029b0ec021fa22339059e0da97c6caed33deae3b396e149463169ea42066266d1179a069d420242d7003c7f9a49186d82e0994abd6eac6341e457995896a1c6d7b4f6645e8328c8b8a7a7e4236c4932d0226305e9825801ee8927ddbd</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">please input password</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>Cyberspace Security</category>
-      </categories>
-      <tags>
-        <tag>CTF</tag>
-        <tag>Tool</tag>
+        <tag>linux</tag>
+        <tag>Kali</tag>
       </tags>
   </entry>
   <entry>
@@ -467,7 +393,8 @@
 <h1 id="1-环境安装"><a href="#1-环境安装" class="headerlink" title="1 环境安装"></a>1 环境安装</h1><ol>
 <li><p><strong>安装git</strong></p>
 </li>
-<li><p><strong>安装node</strong>（注意：下面操作都在git中进行）</p>
+<li><p><strong>安装node</strong></p>
+<p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
 <p>检测node安装是否成功：</p>
 <blockquote>
 <p><code>node -v</code>（返回node版本号）</p>
@@ -566,6 +493,99 @@
       <tags>
         <tag>blog</tag>
         <tag>Questions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP基础</title>
+    <url>/2022/11/09/security/PHP%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="PHP基础"><a href="#PHP基础" class="headerlink" title="PHP基础"></a>PHP基础</h1><p>主要介绍 PHP 基础，从 PHP 简介、PHP 基本语法、超全局变量、正则表达式和 PHP 危险<br>函数等几个方面来进一步了解 PHP。</p>
+<h2 id="1-2-1-PHP-简介"><a href="#1-2-1-PHP-简介" class="headerlink" title="1.2.1 PHP 简介"></a>1.2.1 PHP 简介</h2><p>PHP，全称 Hypertext Preprocessor，即超文本预处理器，是一种通用开源脚本语言。PHP 代码在服务器上执行时，结果以纯 HTML 形式返回给浏览器。</p>
+<p>PHP 文件以 .php 为后缀，包含 PHP 代码、HTML 代码及 JS 代码；PHP 代码也可以在 HTML 文档<br>中运行，可以放在任何位置。</p>
+<h2 id="1-2-2-PHP-基本语法"><a href="#1-2-2-PHP-基本语法" class="headerlink" title="1.2.2 PHP 基本语法"></a>1.2.2 PHP 基本语法</h2><p>PHP 脚本以 <strong><?php** 开头，以 **?></strong> 结尾。</p>
+<p>PHP 有三种注释方式，分别是<strong>脚本注释、单行注释和多行注释</strong>。</p>
+<p>PHP <strong>变量以 $ 符号开头</strong>，其后是变量的名称。变量名称必须以字母或下划线开头，并且只能包<br>含字母、数字和下划线。</p>
+<p>在 PHP 中，<strong>有两种基本的输出方法：echo 和 print。</strong>echo 可以输出一个或多个字符串，无返回值；print 只能输出一个字符串，返回值为“1”。还有 <strong>var_dump () 函数</strong>能显示关于一个或多个表达式的结构信息，包括表达式的类型与值。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-comment">//php 代码</span><br><span class="hljs-comment"># 脚本注释</span><br><span class="hljs-comment">// 单行注释</span><br><span class="hljs-comment">/* 多行注释 */</span><br><span class="hljs-variable">$a</span> = <span class="hljs-string">&quot;hongri&quot;</span>;<br><span class="hljs-variable">$b</span> = <span class="hljs-string">&quot;sec&quot;</span>;<br><span class="hljs-variable">$c</span> = <span class="hljs-variable">$a</span>.<span class="hljs-variable">$b</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$a</span>.<span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<span class="hljs-comment">// 输出 hongri。</span><br><span class="hljs-keyword">print</span> <span class="hljs-variable">$c</span>.<span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<span class="hljs-comment">// 输出 hongrisec。</span><br><span class="hljs-title function_ invoke__">var_dump</span> (<span class="hljs-variable">$a</span>);<span class="hljs-comment">// 输出变量的数据类型和值。</span><br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="1-2-3-运算符"><a href="#1-2-3-运算符" class="headerlink" title="1.2.3 运算符"></a>1.2.3 运算符</h2><ol>
+<li><p>三元运算符</p>
+<p>格式：表达式 1 ？表达式 2：表达式 3<br>含义：如果表达式 1 为真，执行表达式 2；如果表达式 1 为假，则执行表达式 3。</p>
+</li>
+<li><p>字符串运算符</p>
+<p>‘<strong>.</strong>‘起连接作用</p>
+</li>
+<li><p>类型运算符</p>
+<p>instanceof 用于确定一个 PHP 变量是否属于某一类（class）的实例。</p>
+</li>
+</ol>
+<h2 id="1-2-4-和-的区别"><a href="#1-2-4-和-的区别" class="headerlink" title="1.2.4 == 和 === 的区别"></a>1.2.4 == 和 === 的区别</h2><p>== 比较两个变量的值，不比较数据类型；=== 比较两个变量的值和类型。</p>
+<h2 id="1-2-5-超全局变量"><a href="#1-2-5-超全局变量" class="headerlink" title="1.2.5 超全局变量"></a>1.2.5 超全局变量</h2><p>超全局变量是在全部作用域中始终可用的内置变量。在函数或方法中无需执行 global $variable；<br>就可以访问它们。</p>
+<p>这些超全局变量如下。</p>
+<ul>
+<li><p> $GLOBALS：包含了全部变量的全局组合数组。变量的名字就是数组的键。</p>
+</li>
+<li><p> $_SERVER：包含了诸如头信息（header）、路径（path），以及脚本位置（script locations）等信息的数组。这个数组中的项目由 Web 服务器创建。</p>
+</li>
+<li><p> $_GET：通过 URL 参数传递给当前脚本的变量的数组。</p>
+</li>
+<li><p> $_POST：当 HTTP POST 请求的 Content-Type 是 application/x-www-form-urlencoded 或 multipart/form-data 时，会将变量以关联数组形式传入当前脚本。</p>
+</li>
+<li><p> $__REQUEST：默认情况下包含了 $_GET、$_POST 和 $_COOKIE 的数组。</p>
+</li>
+<li><p> $_COOKIE：通过 HTTP Cookies 方式传递给当前脚本的变量的数组。</p>
+</li>
+<li><p> $_SESSION：当前脚本可用 SESSION 变量的数组。</p>
+</li>
+<li><p> $_FILES：通过 HTTP POST 方式上传到当前脚本的项目的数组。</p>
+</li>
+<li><p> $_ENV：通过环境方式传递给当前脚本的变量的数组。</p>
+</li>
+</ul>
+<h2 id="1-2-6-魔术常量和魔术方法"><a href="#1-2-6-魔术常量和魔术方法" class="headerlink" title="1.2.6 魔术常量和魔术方法"></a>1.2.6 魔术常量和魔术方法</h2><ol>
+<li><p>魔术常量</p>
+<p>魔术常量是 PHP 向它运行的任何脚本提供的大量的预定义常量。魔术常量其实不是常量，可以理解为特殊的常量，以下介绍的 5 个魔术常量随位置而改变。</p>
+<ul>
+<li> __LINE__：表示文件中的当前行号。不区分大小写。</li>
+<li> __FILE__：表示文件完整的路径和命名。不区分大小写。</li>
+<li> __FUNCTION__：表示函数名称。区分大小写。</li>
+<li> __CLASS__：表示类的名称。区分大小写。</li>
+<li> __METHOD__：表示类的方法的名称。区分大小写。</li>
+</ul>
+</li>
+<li><p>魔术方法</p>
+<p>都是以两个下划线开头。</p>
+</li>
+</ol>
+<p>未完待续…</p>
+]]></content>
+      <categories>
+        <category>Cyberspace Security</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tools of security</title>
+    <url>/2022/11/09/security/Tools-of-security/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="86ffe393f3394b2daf1f341587ba22c2aeae52b1138c862770042da81ab0c69a">1a122d849dea0253b8c2e18440c0e53b93e7c2dc25016e4b4aa4af6362977a04e8ec9a7add1528fb533e3ca54c9feed9a03564d295809821b74678804c493ebaf541d6dfaad94cb4d68cd0892d8b61842e7472f2206bbd5c9341ea2f80ad4a8115e11b8b29c03223a1a5c9f28973e845b76a66a04f1fcae59a838d4e70f516692ad118cb0eea96975afeafc42029a77b2cbece29f077aca05f65b78f4469bcc28d25019211858378e1dcb5d4cee03281f1eba5d5f36d4ec8c2f046029ac10586dcc030d3423e5ea98842816a3f2390b3799cba7f7c2a231edb717b38017a364b0afe4f646b24c65ef6443a58fc25608a1b5862367901a12d5e2400c0cb9e2173e6b5200e9ade2adcdc3f16ac60734fdea310cb2f4e2ecc566b1c1336664b930e90bdf2bdfbc9a4f5f1e18f42b5528fbcce5236aef2d7cc811ad5a873cd7be7da26d8f3dfcf11c708608c6188aefe8ec802fc7927b4a18d1f4b6069477991b5ff147467b303bba34e744554564f6d309b7b49a028d3343118cf7ee60a83c8f4d8fc64143676763f312f1027aa26bd926205df0ffdae23ade47bb2f9dbaccbb454acee12d0983bb454ca63690863c27a96467be1bbbefe2a5341ed543483f0aff8508c777029b0ec021fa22339059e0da97c6caed33deae3b396e149463169ea42066266d1179a069d420242d7003c7f9a49186d82e0994abd6eac6341e457995896a1c6d7b4f6645e8328c8b8a7a7e4236f129f72766428d4a643fde49530a96e086fd94d440321aa92d02c25b6a1447032992f65cd70580175b66e244c194ed4a7b5b1e1827319e24ab9b4d7541da3baf37676995188d7731f030ffa573a0575872daf1d2ba2b6adb4b048fb4469df6a40c016ca8b80e72311cff50909bd3a577ca4624ec95b17873b655e8d76fd08c90c2856628fe1baa2fe423e9c6583f684a8d3280a0b848300add43b85dfb430f7085bbd6bf22997e4d0fb9d8bd88184559bf8085c43ac4c2f80265bcf53b584644f831cf2189b6d4ecf7177b6dd531e12</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">please input password</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Cyberspace Security</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>Tool</tag>
       </tags>
   </entry>
   <entry>

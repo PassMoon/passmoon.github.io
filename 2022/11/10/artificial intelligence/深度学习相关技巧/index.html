@@ -19,24 +19,24 @@
     <meta name="description" content="Deep Learing from Scratch一书中的第六章总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深度学习相关技巧">
-<meta property="og:url" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/index.html">
+<meta property="og:url" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/index.html">
 <meta property="og:site_name" content="MACHINE">
 <meta property="og:description" content="Deep Learing from Scratch一书中的第六章总结">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于SGD的最优化的更新路径.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于Momentum的最优化的更新路径.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于AdaGrad的最优化的更新路径.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于%20Adam%20的最优化的更新路径.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/使用标准差为%201%20的高斯分布作为权重初始值时的各层激活值的分布.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/使用了%20Batch%20Normalization%20的神经网络的例子.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/Batch%20Norm公式.png">
-<meta property="og:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/权值衰减原文.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于SGD的最优化的更新路径.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于Momentum的最优化的更新路径.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于AdaGrad的最优化的更新路径.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于%20Adam%20的最优化的更新路径.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/使用标准差为%201%20的高斯分布作为权重初始值时的各层激活值的分布.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/使用了%20Batch%20Normalization%20的神经网络的例子.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/Batch%20Norm公式.png">
+<meta property="og:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/权值衰减原文.png">
 <meta property="article:published_time" content="2022-11-10T02:13:07.000Z">
-<meta property="article:modified_time" content="2022-11-10T05:00:01.971Z">
+<meta property="article:modified_time" content="2022-11-16T00:27:00.397Z">
 <meta property="article:author" content="PassMoon">
 <meta property="article:tag" content="Deep Learning">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于SGD的最优化的更新路径.png">
+<meta name="twitter:image" content="http://passmoon.github.io/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于SGD的最优化的更新路径.png">
   
   
   
@@ -78,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml"};
+    var CONFIG = {"hostname":"passmoon.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -272,12 +272,13 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SGD</span>:<br><br>    <span class="hljs-string">&quot;&quot;&quot;随机梯度下降法（Stochastic Gradient Descent）&quot;&quot;&quot;</span><br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, lr=<span class="hljs-number">0.01</span></span>):<br>        self.lr = lr<br>        <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">update</span>(<span class="hljs-params">self, params, grads</span>):<br>        <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> params.keys():<br>            params[key] -= self.lr * grads[key] <br><br></code></pre></td></tr></table></figure>
 
 <p>SGD 呈“之”字形移动。这是一个相当低效的路径。SGD 的<strong>缺点</strong>是，如果函数的形状非均向（anisotropic），比如呈延伸状，搜索的路径就会非常低效。SGD 低效的根本原因是，梯度的方向并没有指向最小值的方向。</p>
+<p>以下都以$f(x,y) = \frac{1}{20} x^2 + y^2$为例</p>
 <img src="/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于SGD的最优化的更新路径.png" srcset="/img/loading.gif" lazyload>
 
 <h3 id="1-2-Momentum"><a href="#1-2-Momentum" class="headerlink" title="1.2 Momentum"></a>1.2 Momentum</h3><p>Momentum 是“动量”的意思，和物理有关。用数学式表示 Momentum 方法，如下所示。<br>$$<br>\begin{aligned}<br>v \leftarrow \alpha v-\eta \frac{\partial L}{\partial W}\\<br>W \leftarrow W+v<br>\end{aligned}<br>$$<br>这里新出现了一个变量 v，对应物理上的速度。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Momentum</span>:<br><br>    <span class="hljs-string">&quot;&quot;&quot;Momentum SGD&quot;&quot;&quot;</span><br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, lr=<span class="hljs-number">0.01</span>, momentum=<span class="hljs-number">0.9</span></span>):<br>        self.lr = lr<br>        self.momentum = momentum<br>        self.v = <span class="hljs-literal">None</span><br>        <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">update</span>(<span class="hljs-params">self, params, grads</span>):<br>        <span class="hljs-keyword">if</span> self.v <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:<br>            self.v = &#123;&#125;<br>            <span class="hljs-keyword">for</span> key, val <span class="hljs-keyword">in</span> params.items():                                <br>                self.v[key] = np.zeros_like(val)<br>                <br>        <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> params.keys():<br>            self.v[key] = self.momentum*self.v[key] - self.lr*grads[key] <br>            params[key] += self.v[key]<br></code></pre></td></tr></table></figure>
 
-<p>和 SGD 相比，我们发现“之”字形的“程度”减轻了。这是因为虽然 x 轴方向上受到的力非常小，但<br>是一直在同一方向上受力，所以朝同一个方向会有一定的加速。反过来，虽然 y 轴方向上受到的力很大，但是因为交互地受到正方向和反方向的力，它们会互相抵消，所以 y 轴方向上的速度不稳定。因此，和 SGD 时的情形相比，可以更快地朝 x 轴方向靠近，减弱“之”字形的变动程度。</p>
+<p>和 SGD 相比，我们发现“之”字形的“程度”减轻了。这是因为虽然 x 轴方向上受到的力非常小，但是一直在同一方向上受力，所以朝同一个方向会有一定的加速。反过来，虽然 y 轴方向上受到的力很大，但是因为交互地受到正方向和反方向的力，它们会互相抵消，所以 y 轴方向上的速度不稳定。因此，和 SGD 时的情形相比，可以更快地朝 x 轴方向靠近，减弱“之”字形的变动程度。</p>
 <img src="/2022/11/10/artificial%20intelligence/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/基于Momentum的最优化的更新路径.png" srcset="/img/loading.gif" lazyload>
 
 <h3 id="1-3-AdaGrad"><a href="#1-3-AdaGrad" class="headerlink" title="1.3. AdaGrad"></a>1.3. AdaGrad</h3><p>在神经网络的学习中，学习率（数学式中记为 η）的值很重要。学习率过小，会导致学习花费过多时间；反过来，学习率过大，则会导致学习发散而不能正确进行。</p>
@@ -402,7 +403,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>深度学习相关技巧</div>
-      <div>http://example.com/2022/11/10/artificial intelligence/深度学习相关技巧/</div>
+      <div>http://passmoon.github.io/2022/11/10/artificial intelligence/深度学习相关技巧/</div>
     </div>
     <div class="license-meta">
       
@@ -446,6 +447,12 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/02/23/artificial%20intelligence/%E4%B9%A6%E5%8D%95/" title="">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -464,6 +471,41 @@
             
   <article id="comments" lazyload>
     
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"PassMoon/passmoon.github.io","repo-id":"R_kgDOHMwv9g","category":"General","category-id":"DIC_kwDOHMwv9s4CUaxN","theme-light":"light","theme-dark":"dark","mapping":"url","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
 
   </article>
 
